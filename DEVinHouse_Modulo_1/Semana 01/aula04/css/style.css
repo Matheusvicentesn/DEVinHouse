@@ -1,0 +1,14 @@
+#conteudo{
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+img {
+    border-radius: 50%;
+    height: auto;
+    width: 30%;
+    
+}
