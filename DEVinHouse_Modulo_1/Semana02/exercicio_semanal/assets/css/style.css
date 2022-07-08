@@ -2,6 +2,16 @@ header{
     margin-top: 5em;
 }
 
+section img{
+    width: auto;
+    height: 200px;
+
+}
+
+/* section{
+     border: solid 2px red; ocupando toda largura da tela 
+} */
+
 .menu {
     background-image: linear-gradient(to right, #0f0d0f, #c52bd3);
     overflow: hidden;
