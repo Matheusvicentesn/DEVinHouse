@@ -7,9 +7,6 @@
     <title>DEVinHouse - Semana 02</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <style>
-
-    </style>
 </head>
 <body>
     <nav class="menu">
@@ -33,12 +30,14 @@
         </section>
         <br>
         <h3>Formulário de contato</h3>
-        <form action="" id="formulario">
-            <input placeholder="Nome" type="text">
-            <input placeholder="E-mail" type="email"><br><br>
-            <textarea placeholder="Sugestão"></textarea>
+        <form>
+            <input placeholder="Nome" type="text" id="nome">
+            <input placeholder="E-mail" type="email" id="email"><br><br>
+            <textarea placeholder="Sugestão" id="sugestao"></textarea>
+            <br>
+            <button type="button" onclick="captura();">Enviar</button>
         </form>
-        <button type="submit" form="formulario" value="submit">Enviar</button>
+        <!-- <button type="submit" form="formulario" value="submit">Enviar</button> -->
     </main>
     <footer>
         <p>Telefone: (11)9999-9999</p>
@@ -46,7 +45,7 @@
         <p>Endereço: Rua A 92  00000-00</p>
         <h6>Todos os direitos reservados ©</h6>
     </footer>
-
     
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
