@@ -2,6 +2,13 @@ header{
     margin-top: 5em;
 }
 
+textarea{
+	width:51%;
+    height: 70px;
+	background:#FFF;
+	margin:0 0 5px;
+}
+
 section img{
     width: auto;
     height: 200px;
@@ -11,6 +18,15 @@ section img{
 /* section{
      border: solid 2px red; ocupando toda largura da tela 
 } */
+
+input p{
+    text-align: center;
+    justify-content: center;
+}
+
+.caixa input{
+    size: 50px;
+}
 
 .menu {
     background-image: linear-gradient(to right, #0f0d0f, #c52bd3);
