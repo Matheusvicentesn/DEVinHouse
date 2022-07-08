@@ -14,6 +14,14 @@ p{
     font-size: 14px;
 }
 
+button{
+    border-radius: 50%;
+    padding: 10px;
+     border: solid 2px red; /*Optei por colocar a cor vermelha */
+    margin-top: 20px;
+
+}
+
 img.padrao{
     width: auto;
     height: 100px;
