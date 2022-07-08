@@ -1,3 +1,19 @@
+body{
+    background-color: #181A1B;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-size: 14px;
+}
+
 img.padrao{
     width: auto;
     height: 100px;
