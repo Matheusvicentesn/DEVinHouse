@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[M1S03] Ex 2 - Iterando sobre arrays de objetos</title>
+</head>
+<body>
+    <h1>Lista de convidados</h1>
+    <div id="lista"></div>
+    
+    <script>
+var listaConvidados = [
+    { nome: "José", sobrenome: "Carlos" },
+    { nome: "Alessandro", sobrenome: "Viana" },
+    { nome: "Paula", sobrenome: "Souza" },
+    { nome: "Cristian", sobrenome: "Schimit" },
+    { nome: "Beatriz", sobrenome: "Viana" },
+    { nome: "Fernanda", sobrenome: "Silveira" },
+    { nome: "Cláudia", sobrenome: "Torres" },
+    { nome: "Augusto", sobrenome: "Cesar" },
+    { nome: "Noemi", sobrenome: "Nakamura" },
+    { nome: "Pedro", sobrenome: "Lobo" },
+  ];
+
+
+var lista = document.createElement("ul");
+
+listaConvidados.forEach(nomes)
+function nomes(listaConvidados) {
+    let item = document.createElement("li");
+    item.innerHTML = listaConvidados.nome +" " + listaConvidados.sobrenome;
+    lista.appendChild(item);
+    document.getElementById("lista").appendChild(lista);
+}
+
+
+    </script>
+</body>
+</html>
