@@ -21,7 +21,7 @@ function calculadora() {
   } else if ((num2 = !null)) {
     resultado = `Erro ${num2} não é valido`;
   } else if ((operador = !null)) {
-    resultado = `Erro ${operador} não é valido`
+    resultado = `Erro ${operador} não é valido`;
   }
 
   return resultado;

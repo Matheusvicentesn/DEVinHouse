@@ -1,0 +1,20 @@
+body{
+  background-color: rgb(66, 64, 64);
+}
+p, ul, li, h1,h2{
+  color: rgb(253, 253, 253);
+}
+li, ul, ol {
+  padding: 10px;
+  text-align: center;
+  text-decoration:none;
+}
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+h1, h2{
+  text-align: center;
+}
