@@ -12,6 +12,9 @@
 <a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/Semana02">Semana 02 ( branch ) </a><br>
 <a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana03">Semana 03 ( branch ) </a><br>
 
+<br>
+<br>
+
 - [ ] Criar readme para cada branch
 - [ ] Criar um hub para todos os exercicios utilizando GitPages
 
