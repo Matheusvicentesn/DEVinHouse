@@ -18,3 +18,6 @@
 - [ ] Criar readme para cada branch
 - [ ] Criar um hub para todos os exercicios utilizando GitPages
 
+<br>
+<p><a href="https://matheusvicentesn.github.io/DEVinHouse/">Link do GitPages</a> (atualmente com exercicio da semana 3)</p>
+
