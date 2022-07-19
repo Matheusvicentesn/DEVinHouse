@@ -8,15 +8,16 @@
   </head>
   <body style="margin-top: 300px">
     <div style="text-align: center">
+      <!-- Digite um número: <input id="numero" type="number" /><br /><br /> -->
       <button onclick="tabuada()">Calcular</button><br />
       <div id="resposta" style="display: inline-block; padding-top: 10px"></div>
     </div>
   </body>
   <script>
-
     var numero = parseInt(prompt("Digite um número"));
-    
+
     function tabuada() {
+    //   var numero = parseInt(document.getElementById("numero").value);
       var resposta = document.getElementById("resposta");
       var tabuada = "";
       for (var i = 1; i < 11; i++) {
