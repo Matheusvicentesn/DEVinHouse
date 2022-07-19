@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voto</title>
+  </head>
+  <body>
+    <div align="center">
+      <p>Clique no botão para realizar uma nova operação</p>
+
+      <!-- <button onClick="voto();">Posso votar ?</button> -->
+    </div>
+  </body>
+
+  <script>
+    var idade = prompt("Digite sua idade");
+    var retorno = "";
+
+    if (idade < 16) {
+      retorno = "Não pode votar";
+    } else if ((idade >= 16 && idade <= 17) || idade >= 70) {
+      retorno = "voto opcional";
+    } else if (idade >= 18 && idade <= 69) {
+      retorno = "voto obrigatorio";
+    }
+
+    alert(retorno);
+    console.log(idade)
+  </script>
+</html>
