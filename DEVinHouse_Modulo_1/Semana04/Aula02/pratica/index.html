@@ -4,28 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tabuada</title>
+    <title>Pratica 2</title>
   </head>
-  <body style="margin-top: 300px">
-    <div style="text-align: center">
-      Digite um número: <input id="numero" type="number" /><br /><br />
-      <button onclick="tabuada()">Calcular</button><br />
-      <div id="resposta" style="display: inline-block; padding-top: 10px"></div>
-      
+  <body>
 
-    </div>
   </body>
   <script>
-    // var numero = parseInt(prompt("Digite um número"));
+    var resultado = "";
 
-    function tabuada() {
-      var numero = parseInt(document.getElementById("numero").value);
-      var resposta = document.getElementById("resposta");
-      var tabuada = "";
-      for (var i = 1; i < 11; i++) {
-        tabuada += numero + " x " + i + " = " + numero * i + "<br/>";
-        resposta.innerHTML = tabuada;
+    do {
+      var numero = parseInt(prompt("Digite um número"));
+      if (numero != -1) {
+        resultado = numero += numero;
+      } else if (isNaN(numero)) {
+        alert("Não é um número");
+      } else if (numero === -1) {
+        alert(resultado);
+        break;
       }
-    }
+    } while (numero != -1);
   </script>
 </html>
