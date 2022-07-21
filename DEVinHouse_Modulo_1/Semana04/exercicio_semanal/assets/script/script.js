@@ -28,11 +28,47 @@ function preencherNomes(list) {
 }
 window.onload(preencherNomes(contasClientes));
 
-// var id = "";
-// var valor = "";
-// var opcao = "";
-// var total = "";
-// var contaCliente = "";
+//depositar
+function depositar(valor, contaCliente) {
+  if (valor <= 0) {
+    alert(`Valor invalido`);
+  } else if (isNaN(valor)) {
+    alert(`Valor invalido`);
+  } else {
+    var saldoAntigo = contaCliente.saldo;
+    contaCliente.saldo += valor;
+    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Deposito realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo}`;
+    operacao.innerHTML = exibir;
+    //teste
+    console.log(contaCliente.saldo, saldoAntigo);
+  }
+}
+
+//sacar
+function sacar(valor, contaCliente) {
+  if (valor > contaCliente.saldo) {
+    alert(`Saldo insuficiente! Saldo Atual ${contaCliente.saldo}`);
+  } else if (isNaN(valor)) {
+    alert(`Valor invalido`);
+  } else {
+    var saldoAntigo = contaCliente.saldo;
+    contaCliente.saldo -= valor;
+    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Saque realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo}`;
+    operacao.innerHTML = exibir;
+    //teste
+    console.log(contaCliente.saldo, saldoAntigo);
+  }
+}
+// comparar
+function comparar(opcao, valor, contaCliente) {
+  if (opcao === "sacar") {
+    console.log("saque selecionado");
+    sacar(valor, contaCliente);
+  } else if (opcao === "depositar") {
+    console.log("Depositar selecionado");
+    depositar(valor,contaCliente );
+  }
+}
 
 function captura() {
   let id = parseInt(document.getElementById("contas").value);
@@ -42,49 +78,9 @@ function captura() {
   let contaCliente = contasClientes.find(function (contaCliente) {
     return contaCliente.id === id;
   });
-
-  function comparar() {
-    if (opcao === "sacar") {
-      console.log("saque selecionado");
-      sacar();
-    } else if (opcao === "depositar") {
-      console.log("Depositar selecionado");
-      depositar();
-    }
-  }
-  comparar();
+  comparar(opcao, valor, contaCliente);
   //teste
   console.log(id, valor, opcao, operacao, contaCliente);
 
-  function sacar() {
-    if (valor > contaCliente.saldo) {
-      alert(`Saldo insuficiente! Saldo Atual ${contaCliente.saldo}`);
-    } else if (isNaN(valor)) {
-      alert(`Valor invalido`);
-    } else {
-      var saldoAntigo = contaCliente.saldo;
-      contaCliente.saldo -= valor;
-      var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Saque realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo}`;
-      operacao.innerHTML = exibir;
-      //teste
-      console.log(contaCliente.saldo, saldoAntigo);
-    }
-  }
-
-  function depositar() {
-    if (valor <= 0) {
-      alert(`Valor invalido`);
-    } else if (isNaN(valor)) {
-      alert(`Valor invalido`);
-    } else {
-      var saldoAntigo = contaCliente.saldo;
-      contaCliente.saldo += valor;
-      var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Deposito realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo}`;
-      operacao.innerHTML = exibir;
-      //teste
-      console.log(contaCliente.saldo, saldoAntigo);
-    }
-  }
-
-
 }
+
