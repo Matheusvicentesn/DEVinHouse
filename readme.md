@@ -11,6 +11,7 @@
 <a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana01">Semana 01 ( branch ) </a><br>
 <a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/Semana02">Semana 02 ( branch ) </a><br>
 <a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana03">Semana 03 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana04">Semana 04 ( branch ) </a><br>
 
 <br>
 <br>
@@ -19,5 +20,5 @@
 - [ ] Criar um hub para todos os exercicios utilizando GitPages
 
 <br>
-<p><a href="https://matheusvicentesn.github.io/DEVinHouse/">Link do GitPages</a> (atualmente com exercicio da semana 3)</p>
+<p><a href="https://matheusvicentesn.github.io/DEVinHouse/">Link do GitPages</a> (atualmente com exercicio da semana 4)</p>
 
