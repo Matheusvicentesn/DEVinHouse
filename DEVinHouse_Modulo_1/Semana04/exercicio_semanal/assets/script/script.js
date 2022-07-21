@@ -20,7 +20,7 @@ const contasClientes = [
 let select = document.getElementById("contas");
 function preencherNomes(list) {
   let contas = list
-    .map((list) => <option value=${list.id}>${list.nome}</option>)
+    .map((list) => `<option value=${list.id}>${list.nome}</option>`)
     .join("\n");
   //teste
   //console.log(contas) teste
@@ -31,13 +31,13 @@ window.onload(preencherNomes(contasClientes));
 //depositar
 function depositar(valor, contaCliente) {
   if (valor <= 0) {
-    alert(Valor invalido);
+    alert(`Valor invalido`);
   } else if (isNaN(valor)) {
-    alert(Valor invalido);
+    alert(`Valor invalido`);
   } else {
     var saldoAntigo = contaCliente.saldo;
     contaCliente.saldo += valor;
-    var exibir = Nome do cliente: ${contaCliente.nome} <br/> Deposito realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo};
+    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Deposito realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo}`;
     operacao.innerHTML = exibir;
     //teste
     console.log(contaCliente.saldo, saldoAntigo);
@@ -47,13 +47,13 @@ function depositar(valor, contaCliente) {
 //sacar
 function sacar(valor, contaCliente) {
   if (valor > contaCliente.saldo) {
-    alert(Saldo insuficiente! Saldo Atual ${contaCliente.saldo});
+    alert(`Saldo insuficiente! Saldo Atual ${contaCliente.saldo}`);
   } else if (isNaN(valor)) {
-    alert(Valor invalido);
+    alert(`Valor invalido`);
   } else {
     var saldoAntigo = contaCliente.saldo;
     contaCliente.saldo -= valor;
-    var exibir = Nome do cliente: ${contaCliente.nome} <br/> Saque realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo};
+    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Saque realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo}`;
     operacao.innerHTML = exibir;
     //teste
     console.log(contaCliente.saldo, saldoAntigo);
