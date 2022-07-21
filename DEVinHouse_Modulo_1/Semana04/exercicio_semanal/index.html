@@ -20,9 +20,16 @@
           <option value="sacar">Sacar</option>
           <option value="depositar">Depositar</option></select
         ><br />
-        <button value="Submit" type="submit" form="formulario">
+        <button
+          onclick="captura()"
+          value="Submit"
+          type="submit"
+          form="formulario"
+        >
           Confirmar
         </button>
+
+        <p id="operacao"></p>
       </form>
     </div>
     <script src="assets/script/script.js"></script>
