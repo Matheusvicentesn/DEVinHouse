@@ -10,16 +10,15 @@
 
   </body>
   <script>
-    var resultado = "";
-
+    var  numero = 0;
+    var r = 0
     do {
       var numero = parseInt(prompt("Digite um número"));
       if (numero != -1) {
-        resultado = numero += numero;
+        r = numero =+ numero + r ;
       } else if (isNaN(numero)) {
-        alert("Não é um número");
       } else if (numero === -1) {
-        alert(resultado);
+        alert(r);
         break;
       }
     } while (numero != -1);
