@@ -1,9 +1,52 @@
-#formulario{
-    text-align: center;
+#formulario {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #353839;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
-#formulario select{
-    margin-top: 10px;
-    margin-bottom: 10px;
+#formulario button{
+ margin-bottom: 20px;
+  }
+
+#formulario select {
+  margin-bottom: 10px;
 }
 
+#formulario h1,
+p {
+  color: white;
+}
+
+
+body {
+  background-color: #181a1b;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #353839;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    
+  }
+.navbar img{
+    align-items: center;
+    width: 200px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #formulario {
+        margin-left: 10%;
+        margin-right: 10%;
+}
+}
