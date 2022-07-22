@@ -1,52 +1,85 @@
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181a1b;
+  margin: 0;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 4em;
+  padding-top: 2em;
+  box-sizing: inherit;
+
+}
+
+footer {
+  background-color: #353839;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+}
+
 #formulario {
   text-align: center;
   border-radius: 5px;
-  background-color: #353839;
+  background-color: #4e5253;
   margin-left: 30%;
   margin-right: 30%;
 }
 
-#formulario button{
- margin-bottom: 20px;
-  }
+#btn {
+  margin-bottom: 20px;
+  width: 10em;
+  height: 2em;
+  border-radius: 0.5em;
+}
 
 #formulario select {
   margin-bottom: 10px;
+  width: 10em;
+  height: 2em;
+  border-radius: 0.5em;
+}
+
+#formulario input {
+  width: 10em;
+  height: 2em;
+  border-radius: 0.5em;
 }
 
 #formulario h1,
 p {
   color: white;
+  margin-bottom: 10px;
 }
 
-
-body {
-  background-color: #181a1b;
-  margin: 0;
-  padding: 0;
-  margin-top: 70px;
+#operacao {
+  padding-bottom: 20px;
 }
-
-
-
 
 .navbar {
-    overflow: hidden;
-    background-color: #353839;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    
-  }
-.navbar img{
-    align-items: center;
-    width: 200px;
+  overflow: hidden;
+  background-color: #353839;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+.navbar img {
+  align-items: center;
+  width: 200px;
+}
 
 @media only screen and (max-width: 600px) {
-    #formulario {
-        margin-left: 10%;
-        margin-right: 10%;
-}
+  #formulario {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }

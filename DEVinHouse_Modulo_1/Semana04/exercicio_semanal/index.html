@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.25" />
     <title>DEVinBank</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -11,35 +11,38 @@
     <div class="navbar">
       <img src="assets/img/devin.png" />
     </div>
-    <div id="formulario">
-      <form action="">
-        <h1>Conta bancaria</h1>
-        <p>Selecione uma conta:</p>
-        <select name="contas" id="contas">
-          <!-- apenas placeholder, preenchimento feito com js -->
-          <option value="null">null</option></select
-        ><br />
-        <p>Digite sua senha:</p>
-        <input type="password" id="password" placeholder="Senha" /> <br />
-        <p id="senha"></p>
-        <p>Escolha o valor da operação:</p>
-        <input type="text" id="valor" placeholder="Valor" /> <br /><br>
-        <select name="opcao" id="opcao">
-          <option value="sacar">Sacar</option>
-          <option value="depositar">Depositar</option></select
-        ><br /><br>
-        <button
-          onclick="captura()"
-          value="Submit"
-          type="submit"
-          form="formulario"
-          id="btn"
-        >
-          Confirmar
-        </button>
-        <p id="operacao"></p>
-      </form>
+      <div id="formulario">
+        <form action="">
+          <h1>Conta bancaria</h1>
+          <p>Selecione uma conta:</p>
+          <select name="contas" id="contas">
+            <!-- apenas placeholder, preenchimento feito com js -->
+            <option value="null">null</option></select
+          ><br />
+          <p>Digite sua senha:</p>
+          <input type="password" id="password" placeholder="Senha" /> <br />
+          <p id="senha"></p>
+          <p>Escolha o valor da operação:</p>
+          <input type="text" id="valor" placeholder="Valor" /> <br /><br />
+          <p>Escolha a operação:</p>
+          <select name="opcao" id="opcao">
+            <option value="sacar">Sacar</option>
+            <option value="depositar">Depositar</option></select
+          ><br /><br />
+          <button
+            onclick="captura()"
+            value="Submit"
+            type="submit"
+            form="formulario"
+            id="btn"
+          >
+            Confirmar
+          </button>
+          <p id="operacao"></p>
+        </form>
     </div>
-    <script src="assets/script/script.js"></script>
+    <footer><small>&copy; Copyright | Feito por Matheus Vicente</small></footer>
+
   </body>
+  <script src="assets/script/script.js"></script>
 </html>
