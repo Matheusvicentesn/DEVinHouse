@@ -2,19 +2,19 @@ const contasClientes = [
   {
     id: 0,
     nome: "Matheus Vicente",
-    saldo: 1000,
+    saldo: 1000.0,
     senha: "1111",
   },
   {
     id: 1,
     nome: "Maria Luzia",
-    saldo: 1555,
+    saldo: 1555.0,
     senha: "2222",
   },
   {
     id: 2,
     nome: "Nicolas Raupp",
-    saldo: 1700,
+    saldo: 1700.0,
     senha: "3333",
   },
 ];
@@ -39,8 +39,12 @@ function depositar(valor, contaCliente) {
     alert(`Valor invalido`);
   } else {
     var saldoAntigo = contaCliente.saldo;
-    contaCliente.saldo += valor;
-    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Deposito realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo}`;
+    parseFloat(contaCliente.saldo += valor);
+    // formatar valor
+    var valorFormatado = valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var contaClienteSaldoFormatado = contaCliente.saldo.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var saldoAntigoFormatado = saldoAntigo.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Deposito realizado no valor: ${valorFormatado} <br/> Saldo atual: ${contaClienteSaldoFormatado} <br/> Saldo anterior:${saldoAntigoFormatado}`;
     operacao.innerHTML = exibir;
     //teste
     console.log(contaCliente.saldo, saldoAntigo);
@@ -55,8 +59,12 @@ function sacar(valor, contaCliente) {
     alert(`Valor invalido`);
   } else {
     var saldoAntigo = contaCliente.saldo;
-    contaCliente.saldo -= valor;
-    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Saque realizado no valor: ${valor} <br/> Saldo atual: ${contaCliente.saldo} <br/> Saldo anterior:${saldoAntigo}`;
+    parseFloat(contaCliente.saldo -= valor)
+    // formatar valor
+    var valorFormatado = valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var contaClienteSaldoFormatado = contaCliente.saldo.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var saldoAntigoFormatado = saldoAntigo.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Saque realizado no valor: ${valorFormatado} <br/> Saldo atual: ${contaClienteSaldoFormatado} <br/> Saldo anterior:${saldoAntigoFormatado}`;
     operacao.innerHTML = exibir;
     //teste
     console.log(contaCliente.saldo, saldoAntigo);
@@ -86,7 +94,7 @@ function senha(password, contaCliente, opcao, valor) {
 function captura() {
   let id = parseInt(document.getElementById("contas").value);
   let password = document.getElementById("password").value;
-  let valor = parseInt(document.getElementById("valor").value);
+  let valor = parseFloat(document.getElementById("valor").value);
   let opcao = document.getElementById("opcao").value;
   let operacao = document.getElementById("operacao");
   let contaCliente = contasClientes.find(function (contaCliente) {
