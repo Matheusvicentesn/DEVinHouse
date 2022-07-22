@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.25" />
     <title>DEVinBank</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div class="navbar">
-      <img src="assets/img/devin.png" />
+      <ul>
+        <li><img src="assets/img/devin.png" /></li>
+      </ul>
     </div>
     <div id="formulario">
       <form action="">
@@ -23,11 +25,12 @@
         <input type="password" id="password" placeholder="Senha" /> <br />
         <p id="senha"></p>
         <p>Escolha o valor da operação:</p>
-        <input type="text" id="valor" placeholder="Valor" /> <br /><br>
+        <input type="text" id="valor" placeholder="Valor" /> <br /><br />
+        <p>Escolha a operação:</p>
         <select name="opcao" id="opcao">
           <option value="sacar">Sacar</option>
           <option value="depositar">Depositar</option></select
-        ><br /><br>
+        ><br /><br />
         <button
           onclick="captura()"
           value="Submit"
@@ -40,6 +43,15 @@
         <p id="operacao"></p>
       </form>
     </div>
-    <script src="assets/script/script.js"></script>
+    <div id="exercicios">
+      <h2> Outros exercicios da semana</h2>
+      <ul>
+        <li><a href="Ex8/index.html">Exercicio 8</a></li>
+        <li><a href="Ex9/index.html">Exercicio 9</a></li>
+        <li><a href="Ex10/index.html">Exercicio 10</a></li>
+      </ul>
+    </div>
+    <footer><small>&copy; Copyright | Feito por Matheus Vicente</small></footer>
   </body>
+  <script src="assets/script/script.js"></script>
 </html>

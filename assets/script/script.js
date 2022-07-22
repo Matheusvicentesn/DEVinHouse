@@ -39,12 +39,21 @@ function depositar(valor, contaCliente) {
     alert(`Valor invalido`);
   } else {
     var saldoAntigo = contaCliente.saldo;
-    parseFloat(contaCliente.saldo += valor);
+    parseFloat((contaCliente.saldo += valor));
     // formatar valor
-    var valorFormatado = valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    var contaClienteSaldoFormatado = contaCliente.saldo.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    var saldoAntigoFormatado = saldoAntigo.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Deposito realizado no valor: ${valorFormatado} <br/> Saldo atual: ${contaClienteSaldoFormatado} <br/> Saldo anterior:${saldoAntigoFormatado}`;
+    var valorFormatado = valor.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+    var contaClienteSaldoFormatado = contaCliente.saldo.toLocaleString(
+      "pt-br",
+      { style: "currency", currency: "BRL" }
+    );
+    var saldoAntigoFormatado = saldoAntigo.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+    var exibir = `Nome do cliente: <strong>${contaCliente.nome}</strong> <br/> Deposito realizado no valor: <strong>${valorFormatado}</strong> <br/> Saldo atual: <strong>${contaClienteSaldoFormatado}</strong> <br/> Saldo anterior:<strong>${saldoAntigoFormatado}</strong>`;
     operacao.innerHTML = exibir;
     //teste
     console.log(contaCliente.saldo, saldoAntigo);
@@ -59,12 +68,21 @@ function sacar(valor, contaCliente) {
     alert(`Valor invalido`);
   } else {
     var saldoAntigo = contaCliente.saldo;
-    parseFloat(contaCliente.saldo -= valor)
+    parseFloat((contaCliente.saldo -= valor));
     // formatar valor
-    var valorFormatado = valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    var contaClienteSaldoFormatado = contaCliente.saldo.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    var saldoAntigoFormatado = saldoAntigo.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    var exibir = `Nome do cliente: ${contaCliente.nome} <br/> Saque realizado no valor: ${valorFormatado} <br/> Saldo atual: ${contaClienteSaldoFormatado} <br/> Saldo anterior:${saldoAntigoFormatado}`;
+    var valorFormatado = valor.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+    var contaClienteSaldoFormatado = contaCliente.saldo.toLocaleString(
+      "pt-br",
+      { style: "currency", currency: "BRL" }
+    );
+    var saldoAntigoFormatado = saldoAntigo.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+    var exibir = `Nome do cliente: <strong>${contaCliente.nome}</strong> <br/> Saque realizado no valor: <strong>${valorFormatado}</strong> <br/> Saldo atual: <strong>${contaClienteSaldoFormatado}</strong> <br/> Saldo anterior:<strong>${saldoAntigoFormatado}</strong>`;
     operacao.innerHTML = exibir;
     //teste
     console.log(contaCliente.saldo, saldoAntigo);
@@ -83,11 +101,15 @@ function comparar(opcao, valor, contaCliente) {
 // validacao
 function senha(password, contaCliente, opcao, valor) {
   let senha2 = document.getElementById("senha");
-  if (contaCliente.senha === password){
+  if (contaCliente.senha === password) {
     comparar(opcao, valor, contaCliente);
-  }
-  else{
-    senha2.innerHTML = `Senha incorreta`;
+    senha2.innerHTML = ` Senha Correta`;
+    document.getElementById("senha").style.color = "green";
+    document.getElementById("senha").contentWindow.location.reload(true);
+  } else {
+    senha2.innerHTML = ` Senha Incorreta`;
+    document.getElementById("senha").style.color = "red";
+    document.getElementById("senha").contentWindow.location.reload(true);
   }
 }
 
@@ -100,7 +122,7 @@ function captura() {
   let contaCliente = contasClientes.find(function (contaCliente) {
     return contaCliente.id === id;
   });
-  senha(password, contaCliente, opcao, valor)
+  senha(password, contaCliente, opcao, valor);
   // comparar(opcao, valor, contaCliente);
   //teste
   console.log(id, valor, opcao, operacao, contaCliente);
