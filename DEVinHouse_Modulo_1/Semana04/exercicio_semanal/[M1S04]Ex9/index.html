@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[M1S04] Ex 9 - Dado uma idade exibe a classificação dela</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div>
+      <input type="text" id="entrada" placeholder="Digite sua idade" />
+      <button id="btn" onclick="idade();">Classificar</button>
+      <h1 id="resposta"></h1>
+    </div>
+  </body>
+  <script>
+    function idade() {
+      let entrada = parseInt(document.getElementById("entrada").value);
+      let resposta = document.getElementById("resposta");
+      if (entrada <= 15) {
+        resposta.innerHTML = "Você é jovem";
+      } 
+      else if( entrada >= 65){
+        resposta.innerHTML = "Você é Idoso";
+      }
+      else if( entrada => 16 && entrada <= 64){
+        resposta.innerHTML = "Você é adulto";
+      }
+    }
+  </script>
+</html>
