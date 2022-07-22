@@ -1,0 +1,14 @@
+#container {
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  background-color: #181a1b;
+}
+
+#lista li {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
