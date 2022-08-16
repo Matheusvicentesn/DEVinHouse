@@ -4,14 +4,16 @@ import logo from "/src/assets/logo.png";
 
 const NavBar = () => {
   return (
-    <header>
+    <header className="navbar">
       <ul>
         <li>
           <img src={logo} alt="" />
         </li>
-        <li className="texto hover">
-          <a href="#">CARDÁPIO</a>
-        </li>
+        <div className="teste">
+          <li className="texto">
+            <a href="#">CARDÁPIO</a>
+          </li>
+        </div>
       </ul>
     </header>
   );

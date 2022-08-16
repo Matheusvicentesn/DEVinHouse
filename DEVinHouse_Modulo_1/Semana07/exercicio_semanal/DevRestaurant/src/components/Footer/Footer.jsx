@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
       <div className="rightSection">
         <a href="#" className="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" className="fa fa-instagram"></a>
       </div>
     </footer>
   );

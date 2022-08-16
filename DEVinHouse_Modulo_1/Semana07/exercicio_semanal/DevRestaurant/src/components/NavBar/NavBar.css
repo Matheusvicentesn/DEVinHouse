@@ -1,10 +1,10 @@
-img {
+.navbar img {
   float: left;
   width: auto;
   height: 50px;
   padding: 14px;
 }
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -12,11 +12,11 @@ ul {
   background-color: #333;
 }
 
-li {
+.navbar li {
   float: left;
 }
 
-li a {
+.navbar li a {
   display: block;
   text-decoration: none;
   margin-top: 10px;
@@ -30,7 +30,7 @@ li a {
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-li a:hover {
+.navbar li a:hover {
   box-shadow: inset 310px 0 0 0 #cb409e;
   color: white;
 }
@@ -40,8 +40,13 @@ li a:hover {
   font-size: larger;
 }
 
+.teste{
+  float: right;
+  margin-right: 50px;
+}
+
 @media only screen and (max-width: 735px) {
-  img {
+  .navbar img {
     margin-left: 50%;
     margin-right: 50%;
   }
