@@ -1,17 +1,19 @@
 import React from "react";
-import './NavBar.css'
-import logo from '/src/assets/logo.png'
+import "./NavBar.css";
+import logo from "/src/assets/logo.png";
 
 const NavBar = () => {
   return (
-    <div>
+    <header>
       <ul>
-        <li><img src={logo} alt="" /></li>
-        <li className="texto">
+        <li>
+          <img src={logo} alt="" />
+        </li>
+        <li className="texto hover">
           <a href="#">CARDÁPIO</a>
         </li>
       </ul>
-    </div>
+    </header>
   );
 };
 

@@ -1,0 +1,56 @@
+.footer {
+  background-color: #262a2b;
+  height: 90px;
+}
+
+.leftSection {
+  float: left;
+}
+.leftSection p {
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 2px;
+}
+
+.rightSection {
+  float: right;
+  padding: 5px;
+}
+
+.rightSection a {
+  padding: 5px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  margin-top: 16px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 735px) {
+  .footer {
+    height: 150px;
+  }
+
+  .leftSection {
+    float: none;
+  }
+  .rightSection {
+    float: none;
+    text-align: center;
+  }
+  .footer p {
+    font-size: small;
+    text-align: center;
+  }
+
+}
