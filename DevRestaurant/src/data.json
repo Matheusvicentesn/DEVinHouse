@@ -1,28 +1,54 @@
 {
-    "pizza": [
-        {
-          "id": 1,
-          "nome": "Pizza 1",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
-          "preco": 70,
-          "tempo": 40,
-          "img": "https://imgs.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-        },
-        {
-          "id": 2,
-          "nome": "Pizza 2",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
-          "preco": 80,
-          "tempo": 40,
-          "img": "https://imgs.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-        },
-        {
-          "id": 3,
-          "nome": "Pizza 3",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
-          "preco": 90,
-          "tempo": 45,
-          "img": "https://imgs.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-        }
-      ]
-  }
+  "pizza": [
+    {
+      "id": 1,
+      "nome": "Pizza 1",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "70 Reais",
+      "tempo": "40 Minutos",
+      "img": "https://tpaempreendimentos.com.br/blog/wp-content/uploads/2019/02/shutterstock-84904912-1024x683.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Pizza 2",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "80 Reais",
+      "tempo": "40 Minutos",
+      "img": "https://tpaempreendimentos.com.br/blog/wp-content/uploads/2019/02/shutterstock-84904912-1024x683.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Pizza 3",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "90 Reais",
+      "tempo": "45 Minutos",
+      "img": "https://tpaempreendimentos.com.br/blog/wp-content/uploads/2019/02/shutterstock-84904912-1024x683.jpg"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 1,
+      "nome": "Bebida 1",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "30 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Bebida 2",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "30 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Bebida 3",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "40 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg"
+    }
+  ]
+}
