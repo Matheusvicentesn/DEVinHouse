@@ -8,6 +8,26 @@ import NavBar from "./components/NavBar/NavBar";
 // Imagens
 import Coffe from "./assets/img/coffe.jpg";
 
+
+
+//lista
+import lista from "./data.json";
+import { Fragment } from "react";
+
+
+//teste
+
+export const CriaCards = ({nome, produtos}) =>{
+  return(
+    <Fragment >
+      {produtos.map((produto) => (
+        <Cards key={produto.id} img={produto.img} nome={produto.nome} descricao={produto.desc} tempo={produto.tempo} preco={produto.preco}></Cards>
+      ))}
+    </Fragment>
+  )
+}
+
+
 function App() {
   return (
     <div className="container">
@@ -28,6 +48,7 @@ function App() {
           preco="10 Reais"
         />
       </div>
+      <CriaCards nome="pizza" produtos={lista}/>
       <Footer />
     </div>
   );
