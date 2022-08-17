@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import Cards from "./components/Cards/Cards";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
+import CriaCards from "./components/CriaCards/CriaCards";
 
 // Imagens
 import Coffe from "./assets/img/coffe.jpg";
@@ -19,7 +20,8 @@ function App() {
     <div className="container">
       <NavBar />
       <div className="gallery">
-
+        <CriaCards nome="pizza" produtos={lista.pizza} />
+        <CriaCards nome="bebidas" produtos={lista.bebidas} />
       </div>
       <Footer />
     </div>
