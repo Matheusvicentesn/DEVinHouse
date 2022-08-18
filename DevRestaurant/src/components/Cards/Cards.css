@@ -1,6 +1,6 @@
 .content {
-  width: 400px;
-  margin: 15px;
+  width: 500px;
+  margin: 30px;
   box-sizing: border-box;
   float: left;
   text-align: center;
@@ -66,15 +66,7 @@
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.buy-1 {
-  background-color: #2183a2;
-}
-.buy-2 {
-  background-color: #3b3e6e;
-}
-.buy-3 {
-  background-color: #0b0b0b;
-}
+
 @media (max-width: 1000px) {
   .content {
     width: 90%;

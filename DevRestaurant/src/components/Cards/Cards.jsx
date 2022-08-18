@@ -3,7 +3,6 @@ import PropType from "prop-types";
 
 const Cards = ({ img, nome, descricao, tempo, preco }) => {
   return (
-    <main className="card">
       <div className="content">
         <img src={img} />
         <h3>{nome}</h3>
@@ -13,7 +12,7 @@ const Cards = ({ img, nome, descricao, tempo, preco }) => {
 
         <button>Adicionar ao carrinho</button>
       </div>
-    </main>
+
   );
 };
 

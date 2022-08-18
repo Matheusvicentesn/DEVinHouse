@@ -50,5 +50,83 @@
       "tempo": "5 Minutos",
       "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg"
     }
+  ],
+  "sobremesas": [
+    {
+      "id": 1,
+      "nome": "Sobremesas 1",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "15 Reais",
+      "tempo": "10 Minutos",
+      "img": "https://www.receitasnestle.com.br/sites/default/files/styles/crop_article_banner_desktop_oes/public/2021-08/capa-sobremesas_3.jpg?itok=nrhhWpmm"
+    },
+    {
+      "id": 2,
+      "nome": "Sobremesas 2",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "20 Reais",
+      "tempo": "15 Minutos",
+      "img": "https://www.receitasnestle.com.br/sites/default/files/styles/crop_article_banner_desktop_oes/public/2021-08/capa-sobremesas_3.jpg?itok=nrhhWpmm"
+    },
+    {
+      "id": 3,
+      "nome": "Sobremesas 3",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "30 Reais",
+      "tempo": "20 Minutos",
+      "img": "https://www.receitasnestle.com.br/sites/default/files/styles/crop_article_banner_desktop_oes/public/2021-08/capa-sobremesas_3.jpg?itok=nrhhWpmm"
+    }
+  ],
+  "pratos_principais": [
+    {
+      "id": 1,
+      "nome": "Prato principal 1",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "50 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg"
+    },
+    {
+      "id": 2,
+      "nome": "Prato principal  2",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "60 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg"
+    },
+    {
+      "id": 3,
+      "nome": "Prato principal  3",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "80 Reais",
+      "tempo": "45 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg"
+    }
+  ],
+  "saladas": [
+    {
+      "id": 1,
+      "nome": "Salada 1",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "50 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://claudia.abril.com.br/wp-content/uploads/2020/01/salada1-1.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Salada   2",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "60 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://claudia.abril.com.br/wp-content/uploads/2020/01/salada1-1.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Salada  3",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "80 Reais",
+      "tempo": "45 Minutos",
+      "img": "https://claudia.abril.com.br/wp-content/uploads/2020/01/salada1-1.jpg"
+    }
   ]
 }
