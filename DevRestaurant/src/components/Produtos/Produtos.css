@@ -1,0 +1,13 @@
+.categoria h2 {
+    color: rgb(212, 97, 97);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 30px;
+  }
+  
+  hr {
+    border-top: 1px solid white;
+    margin-top: 5px;
+  }
+  

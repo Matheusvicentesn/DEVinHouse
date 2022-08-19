@@ -2,13 +2,13 @@ import React, { Fragment } from "react";
 import Cards from "../Cards/Cards";
 import "./CriaCards.css";
 
-const CriaCards = ({ nome, produtos }) => {
+const CriaCards = ({nome,produtos}) => {
   return (
     <Fragment>
-      <h2 className="secaotitulo">{nome}</h2>
-      <hr />
-      {produtos.map((produto) => (
-        <Cards
+      
+      { 
+      produtos.map((produto) => (
+        <Cards 
           key={produto.id}
           img={produto.img}
           nome={produto.nome}
@@ -16,7 +16,9 @@ const CriaCards = ({ nome, produtos }) => {
           tempo={produto.tempo}
           preco={produto.preco}
         ></Cards>
+      
       ))}
+      
     </Fragment>
   );
 };
