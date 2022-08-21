@@ -1,6 +1,4 @@
 <p align="center"><img src="src/assets/logo.png" alt="" style="vertical-align:middle;max-height:50%;"></p>
-<br/>
-<br/>
 
 <p align="center">
  <h2 align="center">DevRestaurant</h2>
