@@ -38,7 +38,8 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
       "preco": "30 Reais",
       "tempo": "5 Minutos",
-      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg"
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Vinho"
     },
     {
       "id": 5,
@@ -46,7 +47,8 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
       "preco": "30 Reais",
       "tempo": "5 Minutos",
-      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg"
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Cerveja"
     },
     {
       "id": 6,
@@ -54,7 +56,8 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
       "preco": "40 Reais",
       "tempo": "5 Minutos",
-      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg"
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Vinho"
     }
   ],
   "sobremesas": [

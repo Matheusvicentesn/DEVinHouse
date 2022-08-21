@@ -1,15 +1,18 @@
 import React, { Fragment } from "react";
 import CriaCards from "../CriaCards/CriaCards";
-import './Produtos.css'
+import { useEffect, useState } from "react";
+import "./Produtos.css";
+
 
 const Produtos = ({ nome, produtos, subSecao }) => {
-
   return (
     <Fragment>
-      <h2 className="categoria">{nome}</h2>
-      <hr />
-      <p>{subSecao}</p>
-      <CriaCards produtos={produtos} />
+      <div className="produtos">
+        <h2>{nome}</h2>
+        <hr />
+        <p cstyle={{color: "red"}} >{subSecao}</p>
+        <CriaCards produtos={produtos} />
+      </div>
     </Fragment>
   );
 };

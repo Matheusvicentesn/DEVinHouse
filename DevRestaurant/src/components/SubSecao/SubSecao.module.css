@@ -1,0 +1,22 @@
+.separador {
+  border-top: 1px solid white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.subSecao {
+  margin-left: 20px;
+  color: white;
+}
+
+.subSecao h3 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .subSecao {
+    margin-left: 10px;
+  }
+}

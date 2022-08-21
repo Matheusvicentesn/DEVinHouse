@@ -1,26 +1,15 @@
 import React, { Fragment } from "react";
 import Cards from "../Cards/Cards";
-import "./CriaCards.css";
+import styles from './CriaCards.module.css';
 
-const CriaCards = ({nome,produtos}) => {
-  return (
-    <Fragment>
-      
-      { 
-      produtos.map((produto) => (
-        <Cards 
-          key={produto.id}
-          img={produto.img}
-          nome={produto.nome}
-          descricao={produto.desc}
-          tempo={produto.tempo}
-          preco={produto.preco}
-        ></Cards>
-      
-      ))}
-      
-    </Fragment>
-  );
-};
+const CriaCards = ({ produtos }) => (
+  <ul className={styles.lista}>
+    {produtos.map((produto) => (
+      <li className={styles.listaItem} key={produto.id}>
+        <Cards produto={produto} />
+      </li>
+    ))}
+  </ul>
+);
 
 export default CriaCards;

@@ -1,0 +1,42 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #181717;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .infoTitulo {
+    text-align: center;
+  }
+  
+  .infoDescricao {
+    font-size: 14px;
+    color: #e0e0e0;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+  }
+  
+  .footerValor {
+    color: #37b000;
+    font-size: 24px;
+  }
+  
