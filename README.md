@@ -25,7 +25,7 @@
 
 ## Sobre
 
-Projeto feito baseando-se nos exercicios semanais do curso DEVinHouse - Turma Intelbras
+Projeto feito baseando-se nos exercícios semanais do curso DEVinHouse - Turma Intelbras
 Primeiros passos com React onde estamos construindo um cardápio e o projeto será atualizado semanalmente até o fim do módulo de React.
 
 ### A ser desenvolvido
@@ -35,7 +35,6 @@ Melhorias que poderão ser feitas no projeto posteriormente.
 - [ ] Construir uma API para consumir os pratos
 - [ ] Deploy da aplicação no Heroku
 - [ ] Melhorias gerais ( CSS, REACT) // Por estarmos no começo da sessão de React o projeto vai ganhar mais corpo com o passar das semanas
-
 
 ### Clonar repositório
 
@@ -47,9 +46,10 @@ git fetch --all
 git pull origin semana07
 ```
 
-Para instalar as dependencias é preciso executar o comando **npm install**: 
+Para instalar as dependências é preciso executar o comando **npm install**:
 <br/>
-Instalar as dependencias do projeto (Dentro da página onde foi clonado o projeto)
+Instalar as dependências do projeto (Dentro da página onde foi clonado o projeto)
+
 ```
 npm install
 ```
@@ -62,17 +62,15 @@ Para rodar o projeto basta rodar o comando dentro da página onde foi clonado o 
 npm run dev
 ```
 
-## Projeto Cardápio Restaurante
+## Projeto DevRestaurant
 
-O objetivo é a criação de uma aplicação web utilizando React.
-Basicamente se trata de um cardápio online que tem por objetivo apresentar as opções disponíveis de um restaurante, de forma categorizada.
+Algumas prints do projeto
 
-![image](src/assets/page.png)
+<p align="center"><img src="src/assets/page.png" alt="" style="height:500px;width:auto;"></p>
 <p align="center"><img src="src/assets/page2.png" alt="" style="height:500px;width:auto;"></p>
 
-
-
 ### Contato
+
 Projeto desenvolvido com base na atividade do curso DEVinHouse
 Qualquer dúvida ou sugestão estou disponível no e-mail:
 <a href="mailto:contato@matheusvicente.dev.br?subject=Questions" title=""> contato@matheusvicente.dev.br</a>
