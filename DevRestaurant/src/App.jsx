@@ -20,7 +20,8 @@ import Secoes from "./components/Secoes/Secoes";
 // filtros
 const subSecoesPizzas = new Set(lista.pizza.map((p) => p.subSecao));
 const subSecoesBebidas = new Set(lista.bebidas.map((p) => p.subSecao));
-console.log(subSecoesBebidas);
+const subSecoesPratosPrincipais = new Set(lista.pratos_principais.map((p) => p.subSecao));
+
 
 function App() {
   const [filter, setFilter] = useState(null);
@@ -53,6 +54,7 @@ function App() {
               <Secoes
                 nome="Pratos Principais"
                 produtos={lista.pratos_principais}
+                subSecoes={Array.from(subSecoesPratosPrincipais)}
               />
             )}
             {(!filter || filter == "sobremesas") && (

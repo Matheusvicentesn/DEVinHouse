@@ -39,7 +39,7 @@
       "preco": "30 Reais",
       "tempo": "5 Minutos",
       "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
-      "subSecao": "Vinho"
+      "subSecao": "Sem àlcool"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "preco": "30 Reais",
       "tempo": "5 Minutos",
       "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
-      "subSecao": "Cerveja"
+      "subSecao": "Sem àlcool"
     },
     {
       "id": 6,
@@ -57,12 +57,93 @@
       "preco": "40 Reais",
       "tempo": "5 Minutos",
       "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
-      "subSecao": "Vinho"
+      "subSecao": "Sem àlcool"
+    },
+    {
+      "id": 7,
+      "nome": "Bebida 4",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "30 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Vinhos"
+    },
+    {
+      "id": 8,
+      "nome": "Bebida 5",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "30 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Vinhos"
+    },
+    {
+      "id": 9,
+      "nome": "Bebida 6",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "40 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Vinhos"
+    },
+    {
+      "id": 10,
+      "nome": "Bebida 7",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "30 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Drinks"
+    },
+    {
+      "id": 11,
+      "nome": "Bebida 8",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "30 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Drinks"
+    },
+    {
+      "id": 12,
+      "nome": "Bebida 9",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "40 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Drinks"
+    },
+    {
+      "id": 13,
+      "nome": "Bebida 10",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "30 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Cervejas"
+    },
+    {
+      "id": 14,
+      "nome": "Bebida 11",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "30 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Cervejas"
+    },
+    {
+      "id": 15,
+      "nome": "Bebida 12",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "40 Reais",
+      "tempo": "5 Minutos",
+      "img": "https://static1.minhavida.com.br/articles/fb/8e/3b/b2/bebidas-destiladas-e-fermentadas-orig-1.jpg",
+      "subSecao": "Cervejas"
     }
   ],
   "sobremesas": [
     {
-      "id": 7,
+      "id": 16,
       "nome": "Sobremesas 1",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
       "preco": "15 Reais",
@@ -70,7 +151,7 @@
       "img": "https://www.receitasnestle.com.br/sites/default/files/styles/crop_article_banner_desktop_oes/public/2021-08/capa-sobremesas_3.jpg?itok=nrhhWpmm"
     },
     {
-      "id": 8,
+      "id": 17,
       "nome": "Sobremesas 2",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
       "preco": "20 Reais",
@@ -78,7 +159,7 @@
       "img": "https://www.receitasnestle.com.br/sites/default/files/styles/crop_article_banner_desktop_oes/public/2021-08/capa-sobremesas_3.jpg?itok=nrhhWpmm"
     },
     {
-      "id": 9,
+      "id": 18,
       "nome": "Sobremesas 3",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
       "preco": "30 Reais",
@@ -88,28 +169,139 @@
   ],
   "pratos_principais": [
     {
-      "id": 10,
+      "id": 19,
       "nome": "Prato principal 1",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
       "preco": "50 Reais",
       "tempo": "30 Minutos",
-      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg"
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Sem Carnes vermelhas"
     },
     {
-      "id": 11,
+      "id": 20,
       "nome": "Prato principal  2",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
       "preco": "60 Reais",
       "tempo": "30 Minutos",
-      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg"
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Sem Carnes vermelhas"
     },
     {
-      "id": 12,
+      "id": 21,
       "nome": "Prato principal  3",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
       "preco": "80 Reais",
       "tempo": "45 Minutos",
-      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg"
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Sem Carnes vermelhas"
+    },
+    {
+      "id": 22,
+      "nome": "Prato principal 4",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "50 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Aves"
+    },
+    {
+      "id": 23,
+      "nome": "Prato principal  5",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "60 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Aves"
+    },
+    {
+      "id": 24,
+      "nome": "Prato principal  6",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "80 Reais",
+      "tempo": "45 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Aves"
+    },
+    {
+      "id": 25,
+      "nome": "Prato principal 7",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "50 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Peixes e frutos do mar"
+    },
+    {
+      "id": 26,
+      "nome": "Prato principal  8",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "60 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Peixes e frutos do mar"
+    },
+    {
+      "id": 27,
+      "nome": "Prato principal  9",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "80 Reais",
+      "tempo": "45 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Peixes e frutos do mar"
+    },
+    {
+      "id": 28,
+      "nome": "Prato principal 10",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "50 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Massas"
+    },
+    {
+      "id": 29,
+      "nome": "Prato principal  11",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "60 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Massas"
+    },
+    {
+      "id": 30,
+      "nome": "Prato principal  12",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "80 Reais",
+      "tempo": "45 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Massas"
+    },
+    {
+      "id": 31,
+      "nome": "Prato principal 13",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "50 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Risotos"
+    },
+    {
+      "id": 32,
+      "nome": "Prato principal  14",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "60 Reais",
+      "tempo": "30 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Risotos"
+    },
+    {
+      "id": 33,
+      "nome": "Prato principal  15",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris.",
+      "preco": "80 Reais",
+      "tempo": "45 Minutos",
+      "img": "https://f.i.uol.com.br/fotografia/2011/09/01/81264-970x600-1.jpeg",
+      "subSecao": "Risotos"
     }
   ],
   "saladas": [

@@ -1,7 +1,7 @@
 .separador {
   border-top: 1px solid white;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
 }
 
 .subSecao {
@@ -10,6 +10,8 @@
 }
 
 .subSecao h3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
   color: white;
   text-align: center;
   text-transform: uppercase;
