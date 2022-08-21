@@ -10,6 +10,7 @@
   margin-top: 5px;
   margin-left: 5px;
   padding: 2px;
+  color: white;
 }
 
 .rightSection {
@@ -52,5 +53,4 @@
     font-size: small;
     text-align: center;
   }
-
 }
