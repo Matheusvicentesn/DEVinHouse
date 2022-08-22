@@ -7,7 +7,6 @@ import styles from "./Secoes.module.css";
 const Secoes = ({ nome, produtos, subSecoes }) => {
   return (
     <div className={styles.container}>
-      {/* {console.log(subSecoes)} */}
       <div>
         <h2>{nome}</h2>
         <hr className={styles.separador} />

@@ -9,7 +9,7 @@ const SubSecao = ({ produtos, subSecao }) => {
   );
 
   return (
-    <div className={styles.subSecao}>{console.log(subSecao)}
+    <div className={styles.subSecao}>
       <div>
         <h3>{subSecao}</h3>
         <hr className={styles.separador} />
