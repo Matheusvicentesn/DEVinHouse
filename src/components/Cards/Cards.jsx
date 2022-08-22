@@ -2,7 +2,7 @@ import styles from "./Cards.module.css";
 import PropTypes from "prop-types";
 
 const Card = ({produto, selecionado, onSelecionar}) => (
-  <div className={styles.card}>
+  <div className={`${styles.card} ${selecionado ? styles.cardSelected : ""} `} >
     <img
       className={styles.img}
       alt="Foto do prato"

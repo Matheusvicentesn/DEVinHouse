@@ -6,7 +6,7 @@ const CriaCards = ({ produtos }) => (
   <ul className={styles.lista}>
     {produtos.map((produto) => (
       <li className={styles.listaItem} key={produto.id}>
-        <Cards produto={produto} />
+        <Cards produto={produto} selecionado={false}/>
       </li>
     ))}
   </ul>
