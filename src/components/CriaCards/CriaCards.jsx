@@ -4,18 +4,24 @@ import styles from "./CriaCards.module.css";
 import { useState } from "react";
 
 const CriaCards = ({ produtos }) => {
-  const [idSelecionados, setIdSelecionados] = useState([])
+  const [idSelecionados, setIdSelecionados] = useState([]);
   const handleSelecionar = (idASelecionar) => {
-    console.log(idASelecionar)
-  }
+    if (idSelecionados.includes(idASelecionar)) {
+      setIdSelecionados(idSelecionados.filter((id) => id !== idASelecionar));
+    } else {
+      setIdSelecionados([...idSelecionados, idASelecionar])
+    }
+  };
   return (
     <ul className={styles.lista}>
       {produtos.map((produto) => (
         <li className={styles.listaItem} key={produto.id}>
           <Cards
             produto={produto}
-            selecionado={false}
-            onSelecionar={() => {handleSelecionar(produto.id)}}
+            selecionado={idSelecionados.includes(produto.id)}
+            onSelecionar={() => {
+              handleSelecionar(produto.id);
+            }}
           />
         </li>
       ))}
