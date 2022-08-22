@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Cards from "../Cards/Cards";
 import styles from "./CriaCards.module.css";
+import { useState } from "react";
 
 const CriaCards = ({ produtos }) => {
   const [idSelecionados, setIdSelecionados] = useState([])
