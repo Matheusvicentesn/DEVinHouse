@@ -5,6 +5,9 @@ import { useState } from "react";
 
 const CriaCards = ({ produtos }) => {
   const [idSelecionados, setIdSelecionados] = useState([])
+  const handleSelecionar = (idASelecionar) => {
+    console.log(idASelecionar)
+  }
   return (
     <ul className={styles.lista}>
       {produtos.map((produto) => (
@@ -12,7 +15,7 @@ const CriaCards = ({ produtos }) => {
           <Cards
             produto={produto}
             selecionado={false}
-            onSelecionar={() => console.log(`Clicou no card`)}
+            onSelecionar={() => {handleSelecionar(produto.id)}}
           />
         </li>
       ))}
