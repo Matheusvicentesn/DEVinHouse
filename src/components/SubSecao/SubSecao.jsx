@@ -15,7 +15,7 @@ const SubSecao = ({ produtos, subSecao }) => {
         <hr className={styles.separador} />
       </div>
 
-      <CriaCards produtos={produtosFiltrados} />
+      <CriaCards key={produtos.id} produtos={produtosFiltrados} />
     </div>
   );
 };

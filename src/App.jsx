@@ -11,11 +11,18 @@ import Menu from "./components/Menu/Menu";
 import Produtos from "./components/Produtos/Produtos";
 import Secoes from "./components/Secoes/Secoes";
 
-// Imagens
-import Coffe from "./assets/img/coffe.jpg";
+// API
+let lista = [];
 
-//lista
-import lista from "./data.json";
+lista = await fetch("https://nodeapidevinrestaurant.herokuapp.com/data")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    return data;
+  });
+
+console.log(lista);
 
 // filtros
 const subSecoesPizzas = new Set(lista.pizza.map((p) => p.subSecao));
@@ -24,6 +31,8 @@ const subSecoesPratosPrincipais = new Set(
   lista.pratos_principais.map((p) => p.subSecao)
 );
 
+//listas
+// import lista from "./data.json";
 const secoes = [
   { nome: "pizzas", produtos: lista.pizza, subSecoes: subSecoesPizzas },
   { nome: "bebidas", produtos: lista.bebidas, subSecoes: subSecoesBebidas },
@@ -36,12 +45,12 @@ const secoes = [
   { nome: "saladas", produtos: lista.saladas, subSecoes: new Set() },
 ];
 
+
 function App() {
   const [filter, setFilter] = useState(null);
   function handleFiltrar(filtro) {
     setFilter(filtro);
   }
-
   return (
     <div className="app">
       <NavBar />
@@ -51,45 +60,18 @@ function App() {
           <main className="card">
             {secoes.map((secao) => {
               return (
-                <Fragment>
+                <Fragment key={secao.nome}>
                   {(!filter || filter == secao.nome) && (
                     <Secoes
                       nome={secao.nome}
                       produtos={secao.produtos}
-                      subSecoes={Array.from(secao.subSecoes)}
+                      subSecoes={filter ? Array.from(secao.subSecoes) : []}
+                      aoFiltrar={handleFiltrar}
                     />
                   )}
                 </Fragment>
               );
             })}
-
-            {/* {(!filter || filter == "pizzas") && (
-              <Secoes
-                nome="pizza"
-                produtos={lista.pizza}
-                subSecoes={Array.from(subSecoesPizzas)}
-              />
-            )}
-            {(!filter || filter == "bebidas") && (
-              <Secoes
-                nome="bebidas"
-                produtos={lista.bebidas}
-                subSecoes={Array.from(subSecoesBebidas)}
-              />
-            )}
-            {(!filter || filter == "pratos_principais") && (
-              <Secoes
-                nome="Pratos Principais"
-                produtos={lista.pratos_principais}
-                subSecoes={Array.from(subSecoesPratosPrincipais)}
-              />
-            )}
-            {(!filter || filter == "sobremesas") && (
-              <Secoes nome="sobremesas" produtos={lista.sobremesas} />
-            )}
-            {(!filter || filter == "saladas") && (
-              <Secoes nome="saladas" produtos={lista.saladas} />
-            )} */}
           </main>
         }
       </div>
