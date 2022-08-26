@@ -9,19 +9,32 @@ import NavBar from "./components/NavBar/NavBar";
 import CriaCards from "./components/CriaCards/CriaCards";
 import Menu from "./components/Menu/Menu";
 import Produtos from "./components/Produtos/Produtos";
+import Secoes from "./components/Secoes/Secoes";
 
 // Imagens
 import Coffe from "./assets/img/coffe.jpg";
 
 //lista
 import lista from "./data.json";
-import Secoes from "./components/Secoes/Secoes";
 
 // filtros
 const subSecoesPizzas = new Set(lista.pizza.map((p) => p.subSecao));
 const subSecoesBebidas = new Set(lista.bebidas.map((p) => p.subSecao));
-const subSecoesPratosPrincipais = new Set(lista.pratos_principais.map((p) => p.subSecao));
+const subSecoesPratosPrincipais = new Set(
+  lista.pratos_principais.map((p) => p.subSecao)
+);
 
+const secoes = [
+  { nome: "pizzas", produtos: lista.pizza, subSecoes: subSecoesPizzas },
+  { nome: "bebidas", produtos: lista.bebidas, subSecoes: subSecoesBebidas },
+  {
+    nome: "Pratos Principais",
+    produtos: lista.pratos_principais,
+    subSecoes: subSecoesPratosPrincipais,
+  },
+  { nome: "sobremesas", produtos: lista.sobremesas, subSecoes: new Set() },
+  { nome: "saladas", produtos: lista.saladas, subSecoes: new Set() },
+];
 
 function App() {
   const [filter, setFilter] = useState(null);
@@ -36,7 +49,21 @@ function App() {
       <div className="main">
         {
           <main className="card">
-            {(!filter || filter == "pizzas") && (
+            {secoes.map((secao) => {
+              return (
+                <Fragment>
+                  {(!filter || filter == secao.nome) && (
+                    <Secoes
+                      nome={secao.nome}
+                      produtos={secao.produtos}
+                      subSecoes={Array.from(secao.subSecoes)}
+                    />
+                  )}
+                </Fragment>
+              );
+            })}
+
+            {/* {(!filter || filter == "pizzas") && (
               <Secoes
                 nome="pizza"
                 produtos={lista.pizza}
@@ -62,7 +89,7 @@ function App() {
             )}
             {(!filter || filter == "saladas") && (
               <Secoes nome="saladas" produtos={lista.saladas} />
-            )}
+            )} */}
           </main>
         }
       </div>

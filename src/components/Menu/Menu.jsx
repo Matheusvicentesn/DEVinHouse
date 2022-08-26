@@ -8,13 +8,16 @@ const Menu = ({ aoFiltrar }) => {
     <div className="menu">
       <ul>
         <li>
+          <a onClick={() => aoFiltrar(null)}>Todos os pratos</a>
+        </li>
+        <li>
           <a onClick={() => aoFiltrar("pizzas")}>Pizzas</a>
         </li>
         <li>
           <a onClick={() => aoFiltrar("bebidas")}>Bebidas</a>
         </li>
         <li>
-          <a onClick={() => aoFiltrar("pratos_principais")}>
+          <a onClick={() => aoFiltrar("Pratos Principais")}>
             Pratos Principais
           </a>
         </li>
