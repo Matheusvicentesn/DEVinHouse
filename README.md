@@ -41,7 +41,7 @@ Para rodar o projeto localmente
 ```
 git clone https://github.com/Matheusvicentesn/DEVinHouse.git
 git fetch --all
-git pull origin semana07
+git pull origin semana09
 ```
 
 Para instalar as dependências é preciso executar o comando **npm install**:
