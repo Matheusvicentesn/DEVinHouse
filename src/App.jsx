@@ -10,6 +10,7 @@ import CriaCards from "./components/CriaCards/CriaCards";
 import Menu from "./components/Menu/Menu";
 import Produtos from "./components/Produtos/Produtos";
 import Secoes from "./components/Secoes/Secoes";
+import ProdutosSelecionadosProvider from "./contexts/ProdutosSelecionados/ProdutosSelecionadosProvider";
 
 // API
 let lista = [];
@@ -45,7 +46,6 @@ const secoes = [
   { nome: "saladas", produtos: lista.saladas, subSecoes: new Set() },
 ];
 
-
 function App() {
   const [filter, setFilter] = useState(null);
   function handleFiltrar(filtro) {
@@ -53,29 +53,31 @@ function App() {
   }
   return (
     <div className="app">
-      <NavBar />
-      <Menu aoFiltrar={handleFiltrar} />
-      <div className="main">
-        {
-          <main className="card">
-            {secoes.map((secao) => {
-              return (
-                <Fragment key={secao.nome}>
-                  {(!filter || filter == secao.nome) && (
-                    <Secoes
-                      nome={secao.nome}
-                      produtos={secao.produtos}
-                      subSecoes={filter ? Array.from(secao.subSecoes) : []}
-                      aoFiltrar={handleFiltrar}
-                    />
-                  )}
-                </Fragment>
-              );
-            })}
-          </main>
-        }
-      </div>
-      <Footer />
+      <ProdutosSelecionadosProvider>
+        <NavBar />
+        <Menu aoFiltrar={handleFiltrar} />
+        <div className="main">
+          {
+            <main className="card">
+              {secoes.map((secao) => {
+                return (
+                  <Fragment key={secao.nome}>
+                    {(!filter || filter == secao.nome) && (
+                      <Secoes
+                        nome={secao.nome}
+                        produtos={secao.produtos}
+                        subSecoes={filter ? Array.from(secao.subSecoes) : []}
+                        aoFiltrar={handleFiltrar}
+                      />
+                    )}
+                  </Fragment>
+                );
+              })}
+            </main>
+          }
+        </div>
+        <Footer />
+      </ProdutosSelecionadosProvider>
     </div>
   );
 }
