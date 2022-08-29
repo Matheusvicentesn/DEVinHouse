@@ -13,7 +13,11 @@
 <a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana03">Semana 03 ( branch ) </a><br>
 <a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana04">Semana 04 ( branch ) </a><br>
 <a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana05">Semana 05 ( branch ) </a><br>
-<a href="#">Semana 06 ( repo ) - Aguardando correção da atividade para poder postar </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana05">Semana 05 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinKnowledge">Semana 06 ( repo ) Projeto DEVinKnowledge</a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana07">Semana 07 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana08">Semana 08 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana09">Semana 09 ( branch ) </a><br>
 
 <br>
 <br>
@@ -23,4 +27,3 @@
 
 <br>
 <p><a href="https://matheusvicentesn.github.io/DEVinHouse/">Link do GitPages</a> (atualmente com exercicio da semana 4)</p>
-
