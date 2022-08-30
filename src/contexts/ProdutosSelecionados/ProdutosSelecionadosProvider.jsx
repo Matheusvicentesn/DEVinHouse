@@ -6,13 +6,11 @@ import { ProdutosSelecionadosContext } from "./ProdutosSelecionadosContext";
 export const ProdutosSelecionadosProvider = ({ children }) => {
   const [produtosSelecionados, setProdutosSelecionados] = useState([]);
 
-
   const isSelecionado = (id) => {
     return produtosSelecionados.some((item) => item.id === id);
   };
 
   const handleSelecionar = (produto) => {
-
     if (isSelecionado(produto.id)) {
       setProdutosSelecionados(
         produtosSelecionados.filter((item) => item.id !== produto.id)
@@ -23,9 +21,13 @@ export const ProdutosSelecionadosProvider = ({ children }) => {
     setProdutosSelecionados([...produtosSelecionados, produto]);
   };
 
+  const clear = () => {
+    setProdutosSelecionados([]);
+  };
+
   return (
     <ProdutosSelecionadosContext.Provider
-      value={{ produtosSelecionados, isSelecionado, handleSelecionar }}
+      value={{ produtosSelecionados, isSelecionado, handleSelecionar, clear }}
     >
       {children}
     </ProdutosSelecionadosContext.Provider>
