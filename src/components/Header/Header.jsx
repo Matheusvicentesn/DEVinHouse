@@ -13,7 +13,7 @@ export const Header = () => (
       <ul className={styles.ul}>
         <li>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <Link to="/produtos-selecionado" className={styles.link}>
+          <Link to="/produtos-selecionados" className={styles.link}>
             Produtos Selecionados
           </Link>
         </li>
