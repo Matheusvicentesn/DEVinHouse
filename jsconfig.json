@@ -6,7 +6,9 @@
       "@icons": ["./assets/icons/index.jsx"],
       "@components": ["./components/index.jsx"],
       "@services": ["./services/index.jsx"],
-      "@contexts": ["./contexts/index.js"]
+      "@contexts": ["./contexts/index.js"],
+      "@pages": ["./pages/index.js"],
+      "@router": ["./router/index.js"]
     }
   },
   "include": ["src"]
