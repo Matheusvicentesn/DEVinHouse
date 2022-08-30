@@ -1,0 +1,38 @@
+.header {
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #181717;
+  color: #37b000;
+}
+
+.titleContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: 500;
+  opacity: 0.6;
+  color: #37b000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: 300ms;
+}
+
+.link:hover {
+  opacity: 1;
+}

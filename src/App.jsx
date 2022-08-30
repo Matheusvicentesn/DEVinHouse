@@ -1,81 +1,59 @@
-import "./App.css";
-import { Fragment } from "react";
-import { useEffect, useState } from "react";
-
-// Componentes
-import Cards from "./components/Cards/Cards";
-import Footer from "./components/Footer/Footer";
-import NavBar from "./components/NavBar/NavBar";
-import CriaCards from "./components/CriaCards/CriaCards";
-import Menu from "./components/Menu/Menu";
-import Produtos from "./components/Produtos/Produtos";
-import Secoes from "./components/Secoes/Secoes";
-import ProdutosSelecionadosProvider from "./contexts/ProdutosSelecionados/ProdutosSelecionadosProvider";
-
-// API
-let lista = [];
-
-lista = await fetch("https://nodeapidevinrestaurant.herokuapp.com/data")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    return data;
-  });
-
-console.log(lista);
-
-// filtros
-const subSecoesPizzas = new Set(lista.pizza.map((p) => p.subSecao));
-const subSecoesBebidas = new Set(lista.bebidas.map((p) => p.subSecao));
-const subSecoesPratosPrincipais = new Set(
-  lista.pratos_principais.map((p) => p.subSecao)
-);
-
-//listas
-// import lista from "./data.json";
-const secoes = [
-  { nome: "pizzas", produtos: lista.pizza, subSecoes: subSecoesPizzas },
-  { nome: "bebidas", produtos: lista.bebidas, subSecoes: subSecoesBebidas },
-  {
-    nome: "Pratos Principais",
-    produtos: lista.pratos_principais,
-    subSecoes: subSecoesPratosPrincipais,
-  },
-  { nome: "sobremesas", produtos: lista.sobremesas, subSecoes: new Set() },
-  { nome: "saladas", produtos: lista.saladas, subSecoes: new Set() },
-];
+import { Footer, Header, Secao, FiltroSecao } from '@components';
+import { produtos } from '@services';
+import { ProdutosSelecionadosProvider } from '@contexts';
+import { useState } from 'react';
+import styles from './App.module.css';
 
 function App() {
-  const [filter, setFilter] = useState(null);
-  function handleFiltrar(filtro) {
-    setFilter(filtro);
-  }
+  const [filtro, setFiltro] = useState(null);
+
+  const secoes = Array.from(new Set(produtos.map((prod) => prod.secao)));
+
+  const obterProdutosSecao = (secao) => {
+    return produtos.filter((p) => p.secao === secao);
+  };
+
+  const obterSubSecoes = (secao) => {
+    const produtosComSubSecoes = obterProdutosSecao(secao).filter((p) => p.subSecao);
+
+    return Array.from(new Set(produtosComSubSecoes.map((p) => p.subSecao)));
+  };
+
+  const obterSecoesFiltradas = () => {
+    if (filtro) {
+      return secoes.filter((s) => s === filtro);
+    }
+    return secoes;
+  };
+
+  const handleSelecionarSecao = (secao) => {
+    if (secao === filtro) {
+      setFiltro(null);
+      return;
+    }
+    setFiltro(secao);
+  };
+
   return (
-    <div className="app">
+    <div className={styles.app}>
       <ProdutosSelecionadosProvider>
-        <NavBar />
-        <Menu aoFiltrar={handleFiltrar} />
-        <div className="main">
-          {
-            <main className="card">
-              {secoes.map((secao) => {
-                return (
-                  <Fragment key={secao.nome}>
-                    {(!filter || filter == secao.nome) && (
-                      <Secoes
-                        nome={secao.nome}
-                        produtos={secao.produtos}
-                        subSecoes={filter ? Array.from(secao.subSecoes) : []}
-                        aoFiltrar={handleFiltrar}
-                      />
-                    )}
-                  </Fragment>
-                );
-              })}
-            </main>
-          }
-        </div>
+        <Header />
+        <main className={styles.main}>
+          <FiltroSecao
+            secoes={secoes}
+            secaoSelecionada={filtro}
+            onSelecionar={handleSelecionarSecao}
+          />
+
+          {obterSecoesFiltradas().map((secao) => (
+            <Secao
+              key={secao}
+              nome={secao}
+              produtos={obterProdutosSecao(secao)}
+              subSecoes={obterSubSecoes(secao)}
+            />
+          ))}
+        </main>
         <Footer />
       </ProdutosSelecionadosProvider>
     </div>

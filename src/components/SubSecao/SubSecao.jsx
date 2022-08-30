@@ -1,12 +1,11 @@
-import PropTypes from "prop-types";
-import CriaCards from "../CriaCards/CriaCards";
+import PropTypes from 'prop-types';
 
-import styles from "./SubSecao.module.css";
+import { ListaCards } from '@components';
 
-const SubSecao = ({ produtos, subSecao }) => {
-  const produtosFiltrados = produtos.filter(
-    (prod) => prod.subSecao === subSecao
-  );
+import styles from './SubSecao.module.css';
+
+export const SubSecao = ({ produtos, subSecao }) => {
+  const produtosFiltrados = produtos.filter((prod) => prod.subSecao === subSecao);
 
   return (
     <div className={styles.subSecao}>
@@ -15,12 +14,10 @@ const SubSecao = ({ produtos, subSecao }) => {
         <hr className={styles.separador} />
       </div>
 
-      <CriaCards key={produtos.id} produtos={produtosFiltrados} />
+      <ListaCards produtos={produtosFiltrados} />
     </div>
   );
 };
-
-export default SubSecao;
 
 SubSecao.propTypes = {
   produtos: PropTypes.array.isRequired,

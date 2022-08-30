@@ -1,5 +1,3 @@
 import { createContext } from "react";
 
-const ProdutosSelecionadosContext = createContext();
-
-export default ProdutosSelecionadosContext;
+export const ProdutosSelecionadosContext = createContext();

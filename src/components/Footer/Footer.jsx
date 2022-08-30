@@ -1,21 +1,19 @@
-import "./Footer.css";
+import { Facebook, Instagram, Youtube } from '@icons';
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="leftSection">
-        <p>
-          Rua Domingos Arevalo - Jardim Damasceno - 02879-070 - São Paulo SP{" "}
-        </p>
-        <p>(11)91234-5769</p>
-        <p>Terça a Domingo das 11:00 as 23:00</p>
-      </div>
-      <div className="rightSection">
-        <a href="#" className="fa fa-facebook"></a>
-        <a href="#" className="fa fa-instagram"></a>
-      </div>
-    </footer>
-  );
-};
+import styles from './Footer.module.css';
 
-export default Footer;
+export const Footer = () => (
+  <footer className={styles.containerFooter}>
+    <section className={styles.sectionInfo}>
+      <h2 className={styles.sectionInfoTitle}>Green Food</h2>
+      <p className={styles.sectionInfoDescription}>©{new Date().getFullYear()} - Green Food.</p>
+      <p className={styles.sectionInfoDescription}>Todos os direitos reservados.</p>
+    </section>
+
+    <section className={styles.sectionSocialMidia}>
+      <Instagram />
+      <Facebook />
+      <Youtube />
+    </section>
+  </footer>
+);
