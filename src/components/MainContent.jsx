@@ -23,14 +23,7 @@ const MainContent = () => {
       <Filter />
       <CardList>
         <TipCard tip={umaDica} />
-        <TipCard tip={umaDica} />
-        <TipCard tip={umaDica} />
-        <TipCard tip={umaDica} />
-        <TipCard tip={umaDica} />
-        <TipCard tip={umaDica} />
-        <TipCard tip={umaDica} />
-        <TipCard tip={umaDica} />
-        <TipCard tip={umaDica} />
+
       </CardList>
     </main>
   );
