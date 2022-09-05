@@ -1,5 +1,10 @@
+import { AppContextProvider } from "./context/app-context";
 import Home from "./pages/Home";
 
 export const App = () => {
-  return <Home />;
+  return (
+    <AppContextProvider>
+      <Home />
+    </AppContextProvider>
+  );
 };

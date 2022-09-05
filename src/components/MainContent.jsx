@@ -1,4 +1,5 @@
 import React from "react";
+import { useAppContext } from "../context/app-context";
 import CardList from "./CardList";
 import Filter from "./Filter";
 import { Summary } from "./Summary";
@@ -14,6 +15,8 @@ const umaDica = {
 };
 
 const MainContent = () => {
+    const result = useAppContext()
+    console.log(result)
   return (
     <main className="main-container">
       <Summary />
