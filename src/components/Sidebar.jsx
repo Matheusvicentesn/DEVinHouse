@@ -1,12 +1,15 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useAppContext } from "../context/app-context";
 
 const Sidebar = () => {
+  const { createTip } = useAppContext();
+
   const { register, handleSubmit } = useForm();
 
   const handleCreateTip = (data) => {
-    console.log(data)
-  }
+    createTip(data);
+  };
   return (
     <aside className="sidebar-container">
       <div className="sidebar-container__logo">

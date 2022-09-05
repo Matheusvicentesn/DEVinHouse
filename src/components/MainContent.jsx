@@ -15,15 +15,16 @@ const umaDica = {
 };
 
 const MainContent = () => {
-    const result = useAppContext()
-    console.log(result)
+  const { tips } = useAppContext();
+
   return (
     <main className="main-container">
       <Summary />
       <Filter />
       <CardList>
-        <TipCard tip={umaDica} />
-
+        {tips.map((tip, index) => (
+          <TipCard key={index} tip={tip} />
+        ))}
       </CardList>
     </main>
   );
