@@ -2,6 +2,7 @@ import { CustomThemeContext } from "./CustomThemeContext";
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { getTheme, setTheme } from "../../utils";
+import { themeDark, themeLight } from "../../themes";
 
 export const CustomThemeProvider = ({ children }) => {
   const [isDark, setDark] = useState(true);
@@ -18,7 +19,9 @@ export const CustomThemeProvider = ({ children }) => {
     });
   };
   return (
-    <CustomThemeContext.Provider value={{ isDark, handleTheme }}>
+    <CustomThemeContext.Provider
+      value={{ theme: isDark ? themeDark : themeLight, handleTheme }}
+    >
       {children}
     </CustomThemeContext.Provider>
   );
