@@ -4,9 +4,10 @@ import { GlobalStyle } from "./themes";
 function App() {
   return (
     <CustomThemeProvider>
-      <GlobalStyle />
-      <AppLayout />
-      <p>Olá</p>
+      <AppLayout>
+        <GlobalStyle />
+        <p>Olá</p>
+      </AppLayout>
     </CustomThemeProvider>
   );
 }

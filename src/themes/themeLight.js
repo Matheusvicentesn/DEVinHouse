@@ -1,4 +1,6 @@
+import { themebase } from "./themeBase";
 export const themeLight = {
+  ...themebase,
   colors: {
     backgroundPrimary: "#dddd",
     backgroundSecondary: "#bebebe",

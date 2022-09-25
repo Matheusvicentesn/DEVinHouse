@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.backgroundPrimary};
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
