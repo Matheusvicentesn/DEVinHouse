@@ -4,7 +4,7 @@ import { useCustomTheme } from "../../contexts/CustomTheme/useCustomTheme";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { PerfilProvider } from "../../contexts/Perfil/PerfilProvider";
 import { GlobalStyle } from "../../themes";
-import { Profile } from "../../components";
+import { Profiles } from "../../pages/Profiles/Profiles";
 export const AppLayout = ({ children }) => {
   const { theme } = useCustomTheme();
   return (
@@ -12,7 +12,7 @@ export const AppLayout = ({ children }) => {
       <GlobalStyle />
       <Navbar />
       <PerfilProvider>
-        <Profile />
+        <Profiles />
       </PerfilProvider>
     </ThemeProvider>
   );
