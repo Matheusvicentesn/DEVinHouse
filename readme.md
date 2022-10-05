@@ -1,4 +1,6 @@
-<img src="https://devinhouse.tech/wp-content/uploads/sites/2/2021/12/logo-dev-in-01.png" alt="" style="width: auto; height: 150px;">
+<div id="container" style="height:100px;line-height:100px;">
+<img src="https://devinhouse.tech/wp-content/uploads/sites/2/2021/12/logo-dev-in-01.png" alt="" style="vertical-align:middle;max-height:50%;">
+</div>
 
   <p align="center">
     <a href="">
