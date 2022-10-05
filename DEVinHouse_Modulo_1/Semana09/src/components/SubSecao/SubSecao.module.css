@@ -1,0 +1,18 @@
+.separador {
+  border-width: 0;
+  height: 1px;
+  border-top-width: 1px;
+  border: 0.3px solid #a2ee8b;
+  margin-bottom: 20px;
+}
+
+.subSecao {
+  margin-left: 20px;
+  color: #a2ee8b;
+}
+
+@media (max-width: 600px) {
+  .subSecao {
+    margin-left: 10px;
+  }
+}

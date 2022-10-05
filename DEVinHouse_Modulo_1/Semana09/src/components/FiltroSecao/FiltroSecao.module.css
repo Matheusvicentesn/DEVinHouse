@@ -1,0 +1,27 @@
+.filtro {
+  display: flex;
+  gap: 20px;
+}
+
+.botaoFiltro {
+  padding: 10px;
+  background-color: #181717;
+  border: 1px solid #37b000;
+  color: #37b000;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 1;
+  transition: 300ms;
+}
+
+.botaoFiltro:hover {
+  opacity: 0.7;
+}
+
+.botaoFiltroSelecionado {
+  background-color: #37b000;
+  color: white;
+  border: 1px solid #181717;
+}

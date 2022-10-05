@@ -1,0 +1,32 @@
+.containerFooter {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181717;
+  padding: 20px 40px;
+}
+
+.sectionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectionInfoTitle {
+  color: #37b000;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 400;
+}
+
+.sectionInfoDescription {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fffaf1;
+}
+
+.sectionSocialMidia {
+  display: flex;
+  gap: 32px;
+}
