@@ -1,10 +1,28 @@
 <img src="https://devinhouse.tech/wp-content/uploads/sites/2/2021/12/logo-dev-in-01.png" alt="" style="width: auto; height: 150px;">
 
-<p style="text-align:center;">
-<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="">
-<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="">
-</p>
+  <p align="center">
+    <a href="">
+      <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="">
+    </a>
+    <a href="">
+      <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="">
+    </a>
+    <a href="">
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="">
+    </a>    
+    <a href="">
+      <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="">
+    </a> 
+    <a href="">
+      <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="">
+    </a>    
+    <a href="">
+      <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="">
+    </a>    
+    <a href="">
+      <img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="">
+    </a>
+  </p>
 <h1>Repositorio para o curso DEVin[Intelbras]</h1>
 
 <h3> Módulo 1 - Semanas </h3>
