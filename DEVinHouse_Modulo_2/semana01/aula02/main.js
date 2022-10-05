@@ -24,6 +24,10 @@ app.post("/tasks", (request, response) => {
   response.status(201).json(task);
 });
 
+app.delete("/tasks/:id", (request, response) => {
+  console.log("teste");
+});
+
 app.listen(3333, () => {
   console.log("Servidor");
 });
