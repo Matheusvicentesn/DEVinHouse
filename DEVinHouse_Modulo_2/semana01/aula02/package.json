@@ -1,5 +1,5 @@
 {
-  "name": "primeiro_projeto",
+  "name": "aula02",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2"
+    "express": "^4.18.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

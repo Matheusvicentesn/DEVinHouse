@@ -1,3 +1,5 @@
+const axios = require("axios").default;
+
 function showFullName(nome, sobrenome) {
   console.log(`Olá ${nome} ${sobrenome}`);
 }
@@ -40,26 +42,67 @@ const students = [
   {
     name: "Zero",
     value: 8.7,
+    achievement: false,
   },
   {
     name: "Vicente",
     value: 7,
+    achievement: false,
   },
   {
     name: "João",
     value: 6,
+    achievement: false,
   },
   {
     name: "Maria",
     value: 6,
-  },  {
+    achievement: false,
+  },
+  {
     name: "Leticia",
     value: 9,
+    achievement: false,
   },
 ];
 
 function getFilterStudents() {
-    console.log(students.filter((student) => student.value >= 7))
+  console.log(students.filter((student) => student.value >= 7));
 }
 
-getFilterStudents()
+function getAchivimentStudents() {
+  return students.map((student) => {
+    if (student.value >= 9) {
+      student.achievement = true;
+    }
+
+    return student;
+  });
+}
+
+getFilterStudents();
+
+console.log(getAchivimentStudents());
+
+function getGitHub(username) {
+  axios
+    .get(`https://api.github.com/users/${username}/repos`)
+    .then((response) => {
+      console.log(response.data[0].name);
+    })
+    .catch(() => console.log("Houve um erro ao recuperar os dados"));
+}
+
+async function getGitHubWithTryCatch(username) {
+  try {
+    const response = await axios.get(
+      `https://api.github.com/users/${username}/repos`
+    );
+    console.log(response.data[0].name);
+  } catch (error) {
+    console.log("Houve um erro ao recuperar os dados");
+  }
+}
+
+getGitHub("Matheusvicentesn");
+getGitHubWithTryCatch("ry");
