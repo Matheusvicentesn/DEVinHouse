@@ -30,6 +30,18 @@ app.get("/solicitations", (request, response) => {
   response.json(solicitations);
 });
 
+//Buscar Pedido
+app.get("/solicitations/:id", (request, response) => {
+  const solicitation = solicitations.find(
+    (solicitation) => solicitation.id === request.params.id
+  );
+
+  if (!solicitation) {
+    response.status(404).json({ error: "Pedido não encontrado" });
+  }
+  response.json(solicitation);
+});
+
 //Cadastrar Pedido
 app.post("/solicitations", (request, response) => {
   const solicitation = {
