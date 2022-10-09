@@ -42,6 +42,10 @@
 <a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/Semana11">Semana 11 ( branch ) </a><br>
 <a href="https://github.com/Matheusvicentesn/connect-lab">Semana 12 ( repo ) Projeto Connect Lab</a><br>
 
+<h3> Módulo 2 - Semanas </h3>
+
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/mod2_semana01">Semana 01 ( branch ) </a><br>
+
 <br>
 <br>
 
