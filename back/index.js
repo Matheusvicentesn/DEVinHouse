@@ -66,6 +66,24 @@ app.post("/solicitations", (request, response) => {
   response.status(201).json(solicitation);
 });
 
+//Deletar solicitação
+app.delete("/solicitations/:id", (request, response) => {
+  const solicitationFiltred = solicitations.filter(
+    (solicitation) => solicitation.id !== request.params.id
+  );
+  solicitations = [...solicitationFiltred];
+  response.json();
+});
+
+//Deletar Pizza
+app.delete("/pizzas/:id", (request, response) => {
+  const pizzasFiltred = pizzas.filter(
+    (pizza) => pizza.id !== request.params.id
+  );
+  pizzas = [...pizzasFiltred];
+  response.json();
+});
+
 app.listen(3333, () => {
   console.log("Servidor Rodando");
 });
