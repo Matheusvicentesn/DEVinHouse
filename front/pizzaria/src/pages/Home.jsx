@@ -107,19 +107,9 @@ const Home = () => {
         <div className="split right">
           <div className="centered">
             <h1>Pedidos</h1>
-            <hr />
-            <label htmlFor="name">Pesquisar Pedido por ID:</label>
-            <input
-              type="text"
-              name="search"
-              onChange={(e) => searchOrderId(e.target.value)}
-            />
-            {searchSolicitationId ? (
-              <p>{searchSolicitationId}</p>
-            ) : (
-              <p>{searchSolicitationId}</p>
-            )}
-            <hr />
+           <hr />
+           <br/>
+           
             <h3>Cadastrar Pedidos</h3>
             <form onSubmit={handleSubmit(addSolicitation)}>
               <label htmlFor="name1">Nome:</label>
