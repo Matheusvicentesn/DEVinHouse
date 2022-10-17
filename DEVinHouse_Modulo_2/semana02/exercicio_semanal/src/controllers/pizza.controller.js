@@ -1,7 +1,12 @@
 import { v4 as uuidv4 } from "uuid";
+import {
+  findPizzasFromLocalJson,
+  registerPizzaInLocalJson,
+} from "../connections/connection.js";
 
 //Buscar Pizzas
 export function findAllPizzas(request, response) {
+  const pizzas = findPizzasFromLocalJson();
   response.json(pizzas);
 }
 
@@ -14,7 +19,7 @@ export function registerPizza(request, response) {
     price: request.body.price,
     ingredients: request.body.ingredients,
   };
-  pizzas.push(pizza);
+  registerPizzaInLocalJson(pizza);
 
   response.status(201).json(pizza);
 }
