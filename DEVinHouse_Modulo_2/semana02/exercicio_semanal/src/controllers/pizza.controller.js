@@ -1,8 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
 import {
+  destroyPizzaInLocalJson,
   findPizzasFromLocalJson,
   registerPizzaInLocalJson,
-} from "../connections/connection.js";
+} from "../utils/connections.js";
 
 //Buscar Pizzas
 export function findAllPizzas(request, response) {
@@ -22,4 +23,15 @@ export function registerPizza(request, response) {
   registerPizzaInLocalJson(pizza);
 
   response.status(201).json(pizza);
+}
+
+//Deletar pizzza
+export function destroyPizza(request, response) {
+  const pizzas = findPizzasFromLocalJson();
+  const pizzasFiltred = pizzas.filter(
+    (pizza) => pizza.id !== request.params.id
+  );
+  console.log(pizzasFiltred);
+  destroyPizzaInLocalJson(pizzasFiltred);
+  response.json();
 }
