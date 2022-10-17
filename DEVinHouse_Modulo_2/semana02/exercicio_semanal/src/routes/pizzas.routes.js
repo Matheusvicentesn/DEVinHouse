@@ -5,7 +5,7 @@ import {
   destroyPizza,
   findAllPizzas,
   registerPizza,
-} from "../controllers/pizza.controller.js";
+} from "../controllers/pizza.controller";
 
 const pizzasRoutes = Router();
 

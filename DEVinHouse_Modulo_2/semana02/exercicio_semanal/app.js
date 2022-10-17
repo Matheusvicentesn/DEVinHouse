@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import pizzasRoutes from "./src/routes/pizzas.routes.js";
+import pizzasRoutes from "./src/routes/pizzas.routes";
 import solicitationsRoutes from "./src/routes/solicitations.routes.js";
 
 const app = express();
