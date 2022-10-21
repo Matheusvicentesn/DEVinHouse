@@ -72,3 +72,89 @@ Algumas prints do projeto
 Projeto desenvolvido com base na atividade do curso DEVinHouse
 Qualquer dúvida ou sugestão estou disponível no e-mail:
 <a href="mailto:contato@matheusvicente.dev.br?subject=Questions" title=""> contato@matheusvicente.dev.br</a>
+
+# [M1S08] Roteiro de projeto - Restaurante 😍
+
+Oieee!
+
+Leia atentamente as informações desse card, pois ele será um guia para a realização dos exercícios dessa semana!
+
+---
+
+O objetivo será a criação de uma aplicação web utilizando React.
+Basicamente se trata de um cardápio online que tem por objetivo apresentar as opções disponíveis de um restaurante, de forma categorizada.
+
+---
+
+**Observações:** Os exercícios devem ser realizados em ordem, pois um depende do outro.
+**Dica:** Após realizar cada exercício teste se tudo está funcionando, sem erros no console do navegador, e já crie um commit ou branch em seu github.
+
+**Descrição**: \
+O conjunto de exercícios dessa semana resulta em uma página básica HTML com alguns estilos CSS. Com exceção do primeiro, cada exercício depende da conclusão do anterior. Faça os exercícios da Semana 1 do Módulo 1 em ordem para que, ao final, seja concluída nossa primeira página web aqui do DEVinHouse. 😉
+
+---
+
+## [M1S08] Ex 1 - Setup Inicial
+
+Uma das habilidades de um desenvolvedor no dia a dia é a capacidade de evoluir um projeto que já existe.
+
+Estes exercícios utilizam como base o projeto no repositório [exercicios-semana7](https://github.com/DEVin-Intelbras/exercicios-semana7).
+
+Baixe o repositório na sua máquina e instale as dependências para realizar os exercícios propostos.
+
+## [M1S08] Ex 2 - Modificando o Card
+
+Modifique o componente `Card`. Adicione 2 novas props: `selecionado`, `onSelecionar`. _Selecionado_ é um booleano (bool) e _onSelecionar_ é uma função (func). Crie um novo estilo para o Card para modificar seu visual quando este estiver selecionado (por exemplo: adicionar bordas vermelhas, sombras, etc). Não se esqueça de atualizar o **propTypes** do Card.
+
+## [M1S08] Ex 3 - Adicionando estilo condicionalmente
+
+Faça com que este estilo seja renderizado condicionalmente no card, com base na prop `selecionado`. Caso selecionado seja `true`, adiciona o estilo. Caso contrário, não adiciona. Você pode usar condicional ternário para renderizar o nome da classe que aplica o estilo de seleção.
+
+## [M1S08] Ex 4 - Adicionando comando ao Card
+
+Passe a função `onSelecionar` para o evento `onClick` do Card, para que, quando clicado, este evento chame a função passada como prop.
+
+## [M1S08] Ex 5 - Modificando ListaCards
+
+Adicione um estado ao componente de `ListaCards`. Este estado será um **array** com os identificadores (ids) dos produtos que foram selecionados e é **inicializado como um array vazio**.
+
+## [M1S08] Ex 6 - Passando as props para o Card da ListaCards
+
+Modifique, dentro do componente de `ListaCards`, o componente `Card` para que ele receba as props `selecionado` e `onSelecionar`.
+
+O valor da prop `selecionado` deve ser **o resultado da verificação se o ID do card está incluso no estado de cards selecionados**.
+
+A prop `onSelecionar` deve receber uma função de callback que será chamada com **o ID do card como argumento**.
+
+Use como nome `handleSelecionar` para esta função. Declare esta função no corpo do componente `ListaCard`. Iremos implementar a lógica no próximo exercício.
+
+## [M1S08] Ex 7 - A lógica do handler
+
+A função `handleSelecionar` deve verificar se o ID do card selecionado já existe no estado de cards selecionados.
+
+Caso a resposta seja positiva, atualize o estado de cards selecionados, filtrando o ID que foi recebido como argumento (dica: **id já selecionado ≠ id recebido**). Use o método `filter` para realizar esta operação.
+
+Caso o ID não exista no estado de cards selecionados, realize a adição deste ID. Lembre-se que a função setter pode receber como argumento uma função de callback com o valor do estado anterior (dica: `[…selecionados, recebido]` ).
+
+## [M1S08] Ex 8 - Seções como objetos
+
+Modifique o componente `App` para que, ao invés de renderizar um componente de seção para cada seção do cardápio, você tenha um array de objetos contendo as propriedades `nome` , `produtos` e `subSecoes` para cada uma das seções.
+
+Use este array de objetos para renderizar, usando o `map`, cada uma das seções. Você deve passar agora, para cada seção, o nome, lista de produtos e, para a prop `subSecoes` do componente `Secao`, fazer uma verificação de se a propriedade `subSecoes` do objeto de seções existe e, caso exista, fazer a transformação de array (Array.from( … )), ou então retornar `null`
+
+## [M1S08] Ex 9 - Componente de filtro
+
+Crie um novo componente chamado `FiltroSecao`. Este componente deve receber um array de seções e uma função `onSelecionarSecao` como prop. Não se esqueça de adicionar o **propType** corretamente.
+
+Este componente deve renderizar uma lista de botões lado a lado na horizontal, com cada um desses botões exibindo o titulo da seção, e o evento `onClick` de cada botão deve chamar uma função de callback com a `onSelecionarSecao` recebendo como argumento o título da seção.
+
+Adicione este componente abaixo do componente `Header` no `App` do seu projeto, passando como prop `secoes` o array objetos de seções do cardápio criado no exercício anterior e como `onSelecionarSecao` uma função `handleSelecionarSecao`. Declare essa função no corpo do seu componente `App`, recebendo como argumento o titulo da seção (uma string), mas não adicione a lógica ainda.
+
+## [M1S08] Ex 10 - Filtrando seções
+
+Adicione um estado para seção selecionada no componente `App`, iniciando com o estado `null`.
+
+A função `handleSelecionarSecao` deve verificar se o valor selecionado é igual ao valor recebido como argumento. Caso seja, faça o estado virar `null` (reseta o estado para nenhuma seção selecionada). Caso contrário, faça o estado receber este novo valor.
+
+Por fim, modifique a renderização da lista de seções para que atenda a seguinte condição: se o estado for `null`, renderiza todas as seções, senão renderiza somente a seção selecionada.
+
