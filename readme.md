@@ -28,23 +28,22 @@
 <h1>Repositorio para o curso DEVin[Intelbras]</h1>
 
 <h3> Módulo 1 - Semanas </h3>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana01">Semana 01 ( branch ) </a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/Semana02">Semana 02 ( branch ) </a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana03">Semana 03 ( branch ) </a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana04">Semana 04 ( branch ) </a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana05">Semana 05 ( branch ) </a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana05">Semana 05 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S01">Semana 01 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S02">Semana 02 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S03">Semana 03 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S04">Semana 04 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S05">Semana 05 ( branch ) </a><br>
 <a href="https://github.com/Matheusvicentesn/DEVinKnowledge">Semana 06 ( repo ) Projeto DEVinKnowledge</a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana07">Semana 07 ( branch ) </a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana08">Semana 08 ( branch ) </a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana09">Semana 09 ( branch ) </a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/semana10">Semana 10 ( branch ) </a><br>
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/Semana11">Semana 11 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S07">Semana 07 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S08">Semana 08 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S09">Semana 09 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S10">Semana 10 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M1S11">Semana 11 ( branch ) </a><br>
 <a href="https://github.com/Matheusvicentesn/connect-lab">Semana 12 ( repo ) Projeto Connect Lab</a><br>
 
 <h3> Módulo 2 - Semanas </h3>
 
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/mod2_semana01">Semana 01 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M2S02">Semana 01 ( branch ) </a><br>
 
 <br>
 <br>
