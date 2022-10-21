@@ -1,4 +1,10 @@
-# [M1S04] Ex 1 - Conta bancaria Parte 1
+# [M1S04] Roteiro de projeto - Conta bancária
+
+Vamos desenvolver um fluxo para criação de um sistema de conta bancária, onde o usuário poderá sacar ou depositar um determinado valor em sua conta.
+
+Os exercícios 1 a 7 são dependentes, então precisam ser feitos na sequência.
+
+## [M1S04] Ex 1 - Conta bancaria Parte 1
 
 Vamos criar a estrutura inicial do projeto para desenvolvimento do sistema de conta bancária.
 
@@ -95,13 +101,14 @@ Idosos - Indivíduos de 65 anos em diante.
 
 Vamos criar uma página para exibir a estação do ano
 
-- Adicione um input do tipo data 
+- Adicione um input do tipo data
 - No evento de onchange do input chamar a função para verificar a estação
-- Criar função para verificar qual a estação atual do ano no hemisfério sul, ela deve adicionar o texto e a imagem que representa a estação da data. 
-Considere: 
--- 22/12 a 21/03 - Verão; 
--- 22/03 a 21/06 - Outono; 
--- 22/06 a 21/09 - Inverno; 
--- 22/09 a 21/12 - Primavera.
-- A página deve conter um texto e uma imagem, ambos representando a estação. 
+- Criar função para verificar qual a estação atual do ano no hemisfério sul, ela deve adicionar o texto e a imagem que representa a estação da data.
+  Considere:
+  -- 22/12 a 21/03 - Verão;
+  -- 22/03 a 21/06 - Outono;
+  -- 22/06 a 21/09 - Inverno;
+  -- 22/09 a 21/12 - Primavera.
+- A página deve conter um texto e uma imagem, ambos representando a estação.
+
 ---
