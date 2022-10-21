@@ -1,5 +1,5 @@
 # Projeto ainda está sendo desenvolvido
-Ainda estou migrando projeto da sexta semana <a hrfef="https://github.com/Matheusvicentesn/DEVinKnowledge">DEVinKnowledge</a> para React com todas as funcionalidades do projeto original.
+Ainda estou migrando projeto da sexta semana <a href="https://github.com/Matheusvicentesn/DEVinKnowledge">DEVinKnowledge</a> para React com todas as funcionalidades do projeto original.
 
 ## [M1S10] Ex 1 - Setup Inicial
 
