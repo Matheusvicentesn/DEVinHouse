@@ -25,8 +25,7 @@ function preencherNomes(list) {
   let contas = list
     .map((list) => `<option value=${list.id}>${list.nome}</option>`)
     .join("\n");
-  //teste
-  //console.log(contas) teste
+
   select.innerHTML = contas;
 }
 window.onload(preencherNomes(contasClientes));
