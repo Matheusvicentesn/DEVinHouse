@@ -1,4 +1,9 @@
-import { BadRequestException, ConflictException, Injectable } from "@nestjs/common";
+import {
+  BadRequestException,
+  ConflictException,
+  Injectable,
+  NotFoundException,
+} from "@nestjs/common";
 import { Database } from "src/database/database";
 import { UpdateBeerDto } from "./dto/update-beer.dto";
 import { Beer } from "./entities/beer.entity";
@@ -41,8 +46,21 @@ export class BeerService {
     }
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} beer`;
+  async findOne(name: string) {
+    const beer = await this.database
+      .getBeers()
+      .filter((beer) =>
+        beer.name.toUpperCase().includes(name.toUpperCase())
+      );
+
+    if (beer.length <= 0) {
+      throw new NotFoundException({
+        statusCode: 404,
+        message: "Users not found",
+      });
+    } else {
+      return beer;
+    }
   }
 
   update(id: number, updateBeerDto: UpdateBeerDto) {

@@ -30,9 +30,9 @@ export class BeerController {
     return this.beerService.findAllBeers(page, size, name);
   }
 
-  @Get(":id")
-  findOne(@Param("id") id: string) {
-    return this.beerService.findOne(+id);
+  @Get(":name")
+  findOne(@Param("name") name: string) {
+    return this.beerService.findOne(name);
   }
 
   @Patch(":id")
