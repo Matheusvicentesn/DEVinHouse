@@ -7,6 +7,7 @@ import {
   Param,
   Delete,
   Query,
+  Put,
 } from "@nestjs/common";
 import { BeerService } from "./beer.service";
 import { UpdateBeerDto } from "./dto/update-beer.dto";
@@ -35,9 +36,12 @@ export class BeerController {
     return this.beerService.findOne(name);
   }
 
-  @Patch(":id")
-  update(@Param("id") id: string, @Body() updateBeerDto: UpdateBeerDto) {
-    return this.beerService.update(+id, updateBeerDto);
+  @Put(":name")
+  public updateDriver(
+    @Body() beer: Beer,
+    @Param("name") name: string
+  ) {
+    return this.beerService.updateBeer(beer, name);
   }
 
   @Delete(":id")

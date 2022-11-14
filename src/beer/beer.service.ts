@@ -49,9 +49,7 @@ export class BeerService {
   async findOne(name: string) {
     const beer = await this.database
       .getBeers()
-      .filter((beer) =>
-        beer.name.toUpperCase().includes(name.toUpperCase())
-      );
+      .filter((beer) => beer.name.toUpperCase().includes(name.toUpperCase()));
 
     if (beer.length <= 0) {
       throw new NotFoundException({
@@ -63,8 +61,25 @@ export class BeerService {
     }
   }
 
-  update(id: number, updateBeerDto: UpdateBeerDto) {
-    return `This action updates a #${id} beer`;
+  // Atualizar dados Motoristas
+  public async updateBeer(bodyBeer, name) {
+    await this.findOne(name); // validar se nome existe
+    const beers = this.database.getBeers();
+
+    const updateBeers = beers.map((beer) => {
+      if (beer.name === name) {
+        beer.name = bodyBeer.name || beer.name;
+        beer.description = bodyBeer.breweryName || beer.description;
+        beer.breweryName = bodyBeer.breweryName || beer.breweryName;
+        beer.type = bodyBeer.type || beer.type;
+      }
+      return beer;
+    });
+    this.database.updateBeer(updateBeers);
+    const filtredBeer = this.database
+      .getBeers()
+      .find((beer) => beer.name === bodyBeer.name);
+    return filtredBeer;
   }
 
   remove(id: number) {
