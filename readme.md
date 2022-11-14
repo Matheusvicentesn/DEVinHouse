@@ -43,7 +43,8 @@
 
 <h3> Módulo 2 - Semanas </h3>
 
-<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M2S02">Semana 01 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M2S02">Semana 02 ( branch ) </a><br>
+<a href="https://github.com/Matheusvicentesn/DEVinHouse/tree/M2S05">Semana 05 ( branch ) </a><br>
 
 <br>
 <br>
