@@ -10,7 +10,6 @@ import {
   Put,
 } from "@nestjs/common";
 import { BeerService } from "./beer.service";
-import { UpdateBeerDto } from "./dto/update-beer.dto";
 import { Beer } from "./entities/beer.entity";
 
 @Controller("beer")
@@ -44,8 +43,8 @@ export class BeerController {
     return this.beerService.updateBeer(beer, name);
   }
 
-  @Delete(":id")
-  remove(@Param("id") id: string) {
-    return this.beerService.remove(+id);
+  @Delete(":name")
+  remove(@Param("name") name: string) {
+    return this.beerService.remove(name);
   }
 }

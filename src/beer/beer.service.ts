@@ -60,8 +60,6 @@ export class BeerService {
       return beer;
     }
   }
-
-  // Atualizar dados Motoristas
   public async updateBeer(bodyBeer, name) {
     await this.findOne(name); // validar se nome existe
     const beers = this.database.getBeers();
@@ -82,7 +80,15 @@ export class BeerService {
     return filtredBeer;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} beer`;
+  async remove(name: string) {
+    await this.findOne(name); // validar se nome existe
+    const beers = this.database
+      .getBeers()
+      .filter((beers) => beers.name != name);
+
+    this.database.deleteBeer(beers);
+    return {
+      message: `User with name: ${name} has been deleted`,
+    };
   }
 }
