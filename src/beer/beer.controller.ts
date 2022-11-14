@@ -6,6 +6,7 @@ import {
   Patch,
   Param,
   Delete,
+  Query,
 } from "@nestjs/common";
 import { BeerService } from "./beer.service";
 import { UpdateBeerDto } from "./dto/update-beer.dto";
@@ -17,12 +18,16 @@ export class BeerController {
 
   @Post()
   create(@Body() beer: Beer) {
-    return this.beerService.create(beer);
+    return this.beerService.createBeer(beer);
   }
 
   @Get()
-  findAll() {
-    return this.beerService.findAll();
+  findAll(
+    @Query("page") page = 1,
+    @Query("size") size = 50,
+    @Query("name") name
+  ) {
+    return this.beerService.findAllBeers(page, size, name);
   }
 
   @Get(":id")
