@@ -1,11 +1,15 @@
-import { Injectable } from '@nestjs/common';
-import { CreateBeerDto } from './dto/create-beer.dto';
-import { UpdateBeerDto } from './dto/update-beer.dto';
+import { Injectable } from "@nestjs/common";
+import { Database } from "src/database/database";
+import { CreateBeerDto } from "./dto/create-beer.dto";
+import { UpdateBeerDto } from "./dto/update-beer.dto";
+import { Beer } from "./entities/beer.entity";
 
 @Injectable()
 export class BeerService {
-  create(createBeerDto: CreateBeerDto) {
-    return 'This action adds a new beer';
+  constructor(private database: Database) {}
+  create(beer: Beer) {
+    this.database.writeBeer(beer);
+    return beer;
   }
 
   findAll() {
