@@ -1,1 +1,0 @@
-Aulas teóricas sobre API REST REST FULL e HTTP
