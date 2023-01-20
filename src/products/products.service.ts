@@ -8,7 +8,7 @@ import { ProductEntity } from './entities/product.entity';
 export class ProductsService {
   constructor(
     @Inject('PRODUCT_REPOSITORY')
-    private userRepository: Repository<ProductEntity>,
+    private productRepository: Repository<ProductEntity>,
   ) {}
 
   create(createProductDto: CreateProductDto) {
@@ -16,11 +16,22 @@ export class ProductsService {
   }
 
   findAll() {
-    this.userRepository.find();
+    this.productRepository.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} product`;
+  async findOne(id: number): Promise<ProductEntity> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const searchedProduct = await this.productRepository.findOne({
+          where: {
+            id: id,
+          },
+        });
+        resolve(searchedProduct);
+      } catch (error) {
+        reject(error);
+      }
+    });
   }
 
   update(id: number, updateProductDto: UpdateProductDto) {
