@@ -15,8 +15,24 @@ export class ProductsService {
     return 'This action adds a new product';
   }
 
-  findAll() {
-    this.productRepository.find();
+  async findAll(query?): Promise<ProductEntity[]> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        if (query) {
+          const products = await this.productRepository.find({
+            where: {
+              category: parseInt(query),
+            },
+          });
+          resolve(products);
+        }
+
+        const products = await this.productRepository.find();
+        resolve(products);
+      } catch (error) {
+        reject(error);
+      }
+    });
   }
 
   async findOne(id: number): Promise<ProductEntity> {
