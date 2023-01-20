@@ -1,34 +1,24 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
+import { ProductEntity } from 'src/products/entities/product.entity';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { CartService } from './cart.service';
-import { CreateCartDto } from './dto/create-cart.dto';
-import { UpdateCartDto } from './dto/update-cart.dto';
 
-@Controller('cart')
+@Controller('shopping-carts')
 export class CartController {
-  constructor(private readonly cartService: CartService) {}
+  constructor(private readonly CartService: CartService) {}
 
   @Post()
-  create(@Body() createCartDto: CreateCartDto) {
-    return this.cartService.create(createCartDto);
+  create() {
+    return this.CartService.create();
   }
 
-  @Get()
-  findAll() {
-    return this.cartService.findAll();
+  @Post('add-product')
+  async addProductToCart(@Body() product: ProductEntity) {
+    return await this.CartService.addProductToCart(product);
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.cartService.findOne(+id);
-  }
-
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCartDto: UpdateCartDto) {
-    return this.cartService.update(+id, updateCartDto);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.cartService.remove(+id);
+  @Get('products')
+  async findAllProductsInTheCart() {
+    return await this.CartService.findAllProductsInTheCart();
   }
 }

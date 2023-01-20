@@ -1,26 +1,61 @@
-import { Injectable } from '@nestjs/common';
-import { CreateCartDto } from './dto/create-cart.dto';
-import { UpdateCartDto } from './dto/update-cart.dto';
+import { Inject, Injectable } from '@nestjs/common';
+import { ProductEntity } from 'src/products/entities/product.entity';
+import { Repository } from 'typeorm';
+import { CartEntity } from './entities/cart.entity';
 
 @Injectable()
 export class CartService {
-  create(createCartDto: CreateCartDto) {
-    return 'This action adds a new cart';
+  constructor(
+    @Inject('CART_REPOSITORY')
+    private cartRepository: Repository<CartEntity>,
+  ) {}
+
+  async create() {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const cart = { user: 1, total: 0 };
+        await this.cartRepository.insert(cart);
+        resolve(cart);
+      } catch (error) {
+        reject({ code: error.code, detail: error.detail });
+      }
+    });
   }
 
-  findAll() {
-    return `This action returns all cart`;
+  addProductToCart(product: ProductEntity) {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const cartToAddProduct = await this.cartRepository.findOne({
+          where: { user: 1 },
+          relations: {
+            products: true,
+          },
+        });
+
+        cartToAddProduct.addProduct(product);
+
+        await this.cartRepository.save(cartToAddProduct);
+        resolve(true);
+      } catch (error) {
+        reject({ code: error.code, detail: error.detail });
+      }
+    });
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} cart`;
-  }
+  findAllProductsInTheCart() {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const { products } = await this.cartRepository.findOne({
+          where: { user: 1 },
+          relations: {
+            products: true,
+          },
+        });
 
-  update(id: number, updateCartDto: UpdateCartDto) {
-    return `This action updates a #${id} cart`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} cart`;
+        resolve(products);
+      } catch (error) {
+        reject(error);
+      }
+    });
   }
 }
