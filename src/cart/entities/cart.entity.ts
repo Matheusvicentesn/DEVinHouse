@@ -22,4 +22,8 @@ export class CartEntity {
     }
     this.products.push(product);
   }
+
+  clearCart() {
+    this.products = [];
+  }
 }
