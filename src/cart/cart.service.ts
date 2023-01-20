@@ -10,6 +10,28 @@ export class CartService {
     private cartRepository: Repository<CartEntity>,
   ) {}
 
+  removeProductFromCart(id: number) {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const shoppingCart = await this.cartRepository.findOne({
+          where: {
+            user: 1,
+          },
+          relations: {
+            products: true,
+          },
+        });
+
+        shoppingCart.removeProduct(id);
+
+        await this.cartRepository.save(shoppingCart);
+        resolve(true);
+      } catch (error) {
+        reject({ code: error.code, detail: error.detail });
+      }
+    });
+  }
+
   async create() {
     return new Promise(async (resolve, reject) => {
       try {

@@ -3,6 +3,9 @@ import { Column, Entity, JoinTable, ManyToMany, PrimaryColumn } from 'typeorm';
 
 @Entity({ name: 'shoppingCart' })
 export class CartEntity {
+  removeProduct(id: number) {
+    throw new Error('Method not implemented.');
+  }
   @PrimaryColumn('int')
   user: number;
 
