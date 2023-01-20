@@ -2,7 +2,8 @@
 /dist
 /node_modules
 
-/docker/database
+.env
+*.md
 
 # Logs
 logs
@@ -35,3 +36,5 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+.env
